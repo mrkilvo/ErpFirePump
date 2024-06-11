@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:{job_number}-{pump_name}",
+ "creation": "2024-06-11 14:33:52.755050",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "column_break_tjbh",
+  "job_number",
+  "address",
+  "pump_name",
+  "section_break_nwwt",
+  "pump_function"
+ ],
+ "fields": [
+  {
+   "description": "These Fields are Hidden and are for System Use only",
+   "fieldname": "job_number",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Job Number",
+   "options": "Job",
+   "search_index": 1
+  },
+  {
+   "description": "These Fields are Hidden and are for System Use only",
+   "fetch_from": "job_number.site_address",
+   "fieldname": "address",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "pump_name",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "label": "Pump Name",
+   "options": "\nPump 1\nPump 2\nPump 3\nPump 4\nPump 5\nPump 6\nPump 7\nPump 8\nPump 9\nPump 10",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_nwwt",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "pump_function",
+   "fieldtype": "Data",
+   "label": "Pump Function"
+  },
+  {
+   "fieldname": "column_break_tjbh",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-11 21:10:23.290247",
+ "modified_by": "Administrator",
+ "module": "Fire Pump System",
+ "name": "Pump Maintenance Report",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

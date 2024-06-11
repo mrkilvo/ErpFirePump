@@ -1,0 +1,488 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "format:{site_asset_address}-{pump_name}",
+ "creation": "2024-06-07 17:55:26.902188",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "site_asset_address",
+  "section_break_jzar",
+  "pump_details_column",
+  "pump_function",
+  "pump_type",
+  "pump_name",
+  "pump_make",
+  "pump_model",
+  "impeller_size",
+  "pump_serial",
+  "pump_seal__packing",
+  "packing_size",
+  "driver_details_column",
+  "driver_type",
+  "driver_make",
+  "driver_model",
+  "driver_power__rpm",
+  "driver_serial",
+  "controller_details_column",
+  "controller_make",
+  "controller_model",
+  "controller_serial",
+  "controller_asset_no",
+  "batteries_section",
+  "start_batteries_column",
+  "start_battery_qty",
+  "start_battery_size",
+  "start_battery_last_install_date",
+  "control_batteries_column",
+  "control_battery_qty",
+  "control_battery_size",
+  "control_battery_last_install_date",
+  "valves_section",
+  "circulation_valves_column",
+  "circulation_relief_size",
+  "circulation_relief_type",
+  "section_break_wohs",
+  "main_relief_stage_1_type",
+  "main_relief_stage_1_size",
+  "column_break_pmos",
+  "main_relief_stage_2_type",
+  "main_relief_stage_2_size",
+  "column_break_ghdr",
+  "main_relief_stage_3_type",
+  "main_relief_stage_3_size",
+  "column_break_rqao",
+  "main_relief_stage_4_type",
+  "main_relief_stage_4_size",
+  "fuel_tank_section",
+  "fuel_tank_column",
+  "fuel_tank_type",
+  "fuel_tank_width",
+  "fuel_tank_length",
+  "fuel_tank_depth",
+  "fuel_tank_capacity",
+  "column_break_ljws",
+  "strip_heater",
+  "block_heater_type",
+  "cooling_system",
+  "fuel_filters_column",
+  "fuel_filter_1",
+  "fuel_filter_2",
+  "fuel_filter_3",
+  "fuel_filter_4",
+  "other_filters_column",
+  "oil_filter_1",
+  "oil_filter_2",
+  "air_filter_1",
+  "air_filter_2",
+  "coolant_filter",
+  "asset_images_tab",
+  "pump",
+  "panel",
+  "driver"
+ ],
+ "fields": [
+  {
+   "fieldname": "site_asset_address",
+   "fieldtype": "Data",
+   "label": "Site Asset Address"
+  },
+  {
+   "fieldname": "pump_name",
+   "fieldtype": "Select",
+   "label": "Pump Name",
+   "options": "Pump 1\nPump 2\nPump 3\nPump 4\nPump 5\nPump 6\nPump 7\nPump 8\nPump 9\nPump 10"
+  },
+  {
+   "fieldname": "section_break_jzar",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "pump_function",
+   "fieldtype": "Data",
+   "label": "Pump Function"
+  },
+  {
+   "fieldname": "pump_make",
+   "fieldtype": "Data",
+   "label": "Pump Make"
+  },
+  {
+   "fieldname": "pump_model",
+   "fieldtype": "Data",
+   "label": "Pump Model"
+  },
+  {
+   "fieldname": "pump_details_column",
+   "fieldtype": "Column Break",
+   "label": "Pump Details"
+  },
+  {
+   "fieldname": "driver_details_column",
+   "fieldtype": "Column Break",
+   "label": "Driver Details"
+  },
+  {
+   "fieldname": "driver_type",
+   "fieldtype": "Data",
+   "label": "Driver Type"
+  },
+  {
+   "fieldname": "driver_make",
+   "fieldtype": "Data",
+   "label": "Driver Make"
+  },
+  {
+   "fieldname": "driver_model",
+   "fieldtype": "Data",
+   "label": "Driver Model"
+  },
+  {
+   "fieldname": "driver_power__rpm",
+   "fieldtype": "Data",
+   "label": "Driver Power / RPM"
+  },
+  {
+   "fieldname": "controller_details_column",
+   "fieldtype": "Column Break",
+   "label": "Controller Details"
+  },
+  {
+   "fieldname": "controller_make",
+   "fieldtype": "Data",
+   "label": "Controller Make"
+  },
+  {
+   "fieldname": "controller_model",
+   "fieldtype": "Data",
+   "label": "Controller Model"
+  },
+  {
+   "fieldname": "controller_asset_no",
+   "fieldtype": "Data",
+   "label": "Controller Asset No"
+  },
+  {
+   "fieldname": "batteries_section",
+   "fieldtype": "Section Break",
+   "label": "Batteries"
+  },
+  {
+   "fieldname": "start_batteries_column",
+   "fieldtype": "Column Break",
+   "label": "Start Batteries"
+  },
+  {
+   "fieldname": "start_battery_qty",
+   "fieldtype": "Data",
+   "label": "Start Battery Qty"
+  },
+  {
+   "fieldname": "start_battery_size",
+   "fieldtype": "Data",
+   "label": "Start Battery Size"
+  },
+  {
+   "fieldname": "start_battery_last_install_date",
+   "fieldtype": "Data",
+   "label": "Start Battery Last Install Date"
+  },
+  {
+   "fieldname": "control_batteries_column",
+   "fieldtype": "Column Break",
+   "label": "Control Batteries"
+  },
+  {
+   "fieldname": "control_battery_qty",
+   "fieldtype": "Data",
+   "label": "Control Battery Qty"
+  },
+  {
+   "fieldname": "control_battery_size",
+   "fieldtype": "Data",
+   "label": "Control Battery Size"
+  },
+  {
+   "fieldname": "control_battery_last_install_date",
+   "fieldtype": "Data",
+   "label": "Control Battery Last Install Date"
+  },
+  {
+   "fieldname": "asset_images_tab",
+   "fieldtype": "Tab Break",
+   "label": "Asset Images"
+  },
+  {
+   "fieldname": "pump",
+   "fieldtype": "Attach Image",
+   "label": "Pump"
+  },
+  {
+   "fieldname": "panel",
+   "fieldtype": "Attach Image",
+   "label": "Panel"
+  },
+  {
+   "fieldname": "driver",
+   "fieldtype": "Attach Image",
+   "label": "Driver"
+  },
+  {
+   "fieldname": "pump_serial",
+   "fieldtype": "Data",
+   "label": "Pump Serial"
+  },
+  {
+   "fieldname": "driver_serial",
+   "fieldtype": "Data",
+   "label": "Driver Serial"
+  },
+  {
+   "fieldname": "controller_serial",
+   "fieldtype": "Data",
+   "label": "Controller Serial"
+  },
+  {
+   "fieldname": "valves_section",
+   "fieldtype": "Section Break",
+   "label": "Valves"
+  },
+  {
+   "fieldname": "circulation_valves_column",
+   "fieldtype": "Column Break",
+   "label": "Circulation Valves"
+  },
+  {
+   "fieldname": "circulation_relief_size",
+   "fieldtype": "Data",
+   "label": "Circulation Relief Size"
+  },
+  {
+   "fieldname": "circulation_relief_type",
+   "fieldtype": "Data",
+   "label": "Circulation Relief Type"
+  },
+  {
+   "fieldname": "section_break_wohs",
+   "fieldtype": "Section Break",
+   "label": "Main Relief"
+  },
+  {
+   "fieldname": "main_relief_stage_1_type",
+   "fieldtype": "Link",
+   "label": "Main Relief Stage 1 Type",
+   "options": "Main Relief Valve Type"
+  },
+  {
+   "fieldname": "column_break_pmos",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "main_relief_stage_2_type",
+   "fieldtype": "Data",
+   "label": "Main Relief Stage 2 Type"
+  },
+  {
+   "fieldname": "column_break_ghdr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "main_relief_stage_3_type",
+   "fieldtype": "Data",
+   "label": "Main Relief Stage 3 Type"
+  },
+  {
+   "fieldname": "column_break_rqao",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "main_relief_stage_4_type",
+   "fieldtype": "Data",
+   "label": "Main Relief Stage 4 Type"
+  },
+  {
+   "fieldname": "main_relief_stage_1_size",
+   "fieldtype": "Link",
+   "label": "Main Relief Stage 1 Size",
+   "options": "Valve Sizes"
+  },
+  {
+   "fieldname": "main_relief_stage_2_size",
+   "fieldtype": "Data",
+   "label": "Main Relief Stage 2 Size"
+  },
+  {
+   "fieldname": "main_relief_stage_3_size",
+   "fieldtype": "Data",
+   "label": "Main Relief Stage 3 Size"
+  },
+  {
+   "fieldname": "main_relief_stage_4_size",
+   "fieldtype": "Data",
+   "label": "Main Relief Stage 4 Size"
+  },
+  {
+   "fieldname": "impeller_size",
+   "fieldtype": "Data",
+   "label": "Impeller Size"
+  },
+  {
+   "fieldname": "fuel_tank_section",
+   "fieldtype": "Section Break",
+   "label": "Ancilliary Items"
+  },
+  {
+   "default": "Rectangle",
+   "fieldname": "fuel_tank_type",
+   "fieldtype": "Select",
+   "label": "Fuel Tank Type",
+   "options": "Rectangle\nRound"
+  },
+  {
+   "fieldname": "fuel_tank_width",
+   "fieldtype": "Data",
+   "label": "Fuel Tank Width"
+  },
+  {
+   "fieldname": "fuel_tank_length",
+   "fieldtype": "Data",
+   "label": "Fuel Tank Length"
+  },
+  {
+   "fieldname": "fuel_tank_depth",
+   "fieldtype": "Data",
+   "label": "Fuel Tank Depth"
+  },
+  {
+   "fieldname": "fuel_tank_capacity",
+   "fieldtype": "Data",
+   "label": "Fuel Tank Capacity"
+  },
+  {
+   "description": "Measurements in MM",
+   "fieldname": "fuel_tank_column",
+   "fieldtype": "Column Break",
+   "label": "Fuel Tank"
+  },
+  {
+   "fieldname": "column_break_ljws",
+   "fieldtype": "Column Break",
+   "label": "Heating & Cooling"
+  },
+  {
+   "fieldname": "strip_heater",
+   "fieldtype": "Select",
+   "label": "Strip Heater",
+   "options": "\nPlug In\nHard Wired\nNot Fitted"
+  },
+  {
+   "fieldname": "block_heater_type",
+   "fieldtype": "Data",
+   "label": "Block Heater Type"
+  },
+  {
+   "fieldname": "fuel_filters_column",
+   "fieldtype": "Column Break",
+   "label": "Fuel Filters"
+  },
+  {
+   "fieldname": "fuel_filter_1",
+   "fieldtype": "Data",
+   "label": "Fuel Filter 1"
+  },
+  {
+   "fieldname": "fuel_filter_2",
+   "fieldtype": "Data",
+   "label": "Fuel Filter 2"
+  },
+  {
+   "fieldname": "fuel_filter_3",
+   "fieldtype": "Data",
+   "label": "Fuel Filter 3"
+  },
+  {
+   "fieldname": "fuel_filter_4",
+   "fieldtype": "Data",
+   "label": "Fuel Filter 4"
+  },
+  {
+   "fieldname": "other_filters_column",
+   "fieldtype": "Column Break",
+   "label": "Other Filters"
+  },
+  {
+   "fieldname": "oil_filter_1",
+   "fieldtype": "Data",
+   "label": "Oil Filter 1"
+  },
+  {
+   "fieldname": "oil_filter_2",
+   "fieldtype": "Data",
+   "label": "Oil Filter 2"
+  },
+  {
+   "fieldname": "air_filter_1",
+   "fieldtype": "Data",
+   "label": "Air Filter 1"
+  },
+  {
+   "fieldname": "air_filter_2",
+   "fieldtype": "Data",
+   "label": "Air Filter 2"
+  },
+  {
+   "fieldname": "coolant_filter",
+   "fieldtype": "Data",
+   "label": "Coolant Filter"
+  },
+  {
+   "fieldname": "cooling_system",
+   "fieldtype": "Select",
+   "label": "Cooling System",
+   "options": "\nHeat Exchanger\nRadiator\nRaw Water\nElectric\nAir Cooled"
+  },
+  {
+   "fieldname": "pump_seal__packing",
+   "fieldtype": "Data",
+   "label": "Pump Seal / Packing"
+  },
+  {
+   "fieldname": "pump_type",
+   "fieldtype": "Data",
+   "label": "Pump Type"
+  },
+  {
+   "fieldname": "packing_size",
+   "fieldtype": "Select",
+   "label": "Packing Size",
+   "options": "\n7mm\n8mm\n9mm\n10mm\n12mm\n14mm"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-11 17:38:27.557132",
+ "modified_by": "Administrator",
+ "module": "Fire Pump System",
+ "name": "Site Asset",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "site_asset_address"
+}

@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-11 16:01:10.984741",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "job_number",
+  "address",
+  "sales_order_number",
+  "pump_number",
+  "defect_type",
+  "defect_description",
+  "defect_recommendation",
+  "estimated_hours_to_complete"
+ ],
+ "fields": [
+  {
+   "fieldname": "job_number",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Job Number",
+   "options": "Job",
+   "search_index": 1
+  },
+  {
+   "fetch_from": "job_number.site_address",
+   "fieldname": "address",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Address",
+   "options": "Address",
+   "search_index": 1
+  },
+  {
+   "fetch_from": "job_number.sales_order",
+   "fieldname": "sales_order_number",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Sales Order Number",
+   "options": "Sales Order"
+  },
+  {
+   "fieldname": "pump_number",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Pump Number",
+   "options": "\nPump 1\nPump 2\nPump 3\nPump 4\nPump 5\nPump 6\nPump 7\nPump 8\nPump 9\nPump 10",
+   "reqd": 1
+  },
+  {
+   "fieldname": "defect_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Defect Type",
+   "options": "\nCritical\nNone Critical\nRecommendation\nAdvisory",
+   "reqd": 1
+  },
+  {
+   "fieldname": "defect_description",
+   "fieldtype": "Small Text",
+   "label": "Defect Description"
+  },
+  {
+   "fieldname": "defect_recommendation",
+   "fieldtype": "Small Text",
+   "label": "Defect Recommendation"
+  },
+  {
+   "fieldname": "estimated_hours_to_complete",
+   "fieldtype": "Float",
+   "label": "Estimated Hours to Complete"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-11 16:15:12.253481",
+ "modified_by": "Administrator",
+ "module": "Fire Pump System",
+ "name": "Defects",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

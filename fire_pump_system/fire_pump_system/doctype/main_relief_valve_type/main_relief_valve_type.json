@@ -1,0 +1,56 @@
+{
+ "actions": [],
+ "autoname": "field:main_relief_type",
+ "creation": "2024-06-11 16:51:29.954847",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "main_relief_type_section",
+  "main_relief_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "main_relief_type_section",
+   "fieldtype": "Section Break",
+   "label": "Main Relief Type"
+  },
+  {
+   "fieldname": "main_relief_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Main Relief Type",
+   "reqd": 1,
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-11 16:59:02.306617",
+ "modified_by": "Administrator",
+ "module": "Fire Pump System",
+ "name": "Main Relief Valve Type",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "main_relief_type",
+ "show_name_in_global_search": 1,
+ "show_preview_popup": 1,
+ "sort_field": "modified",
+ "sort_order": "ASC",
+ "states": [],
+ "title_field": "main_relief_type"
+}

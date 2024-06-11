@@ -1,0 +1,164 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:JOB-M{#####}",
+ "creation": "2024-06-11 14:25:24.286010",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "sales_order",
+  "site_address",
+  "site_access_notes",
+  "site_notes",
+  "office_use_only_column",
+  "job_paperwork_completed",
+  "critical_defect",
+  "pump_offline",
+  "tech_status",
+  "office_status"
+ ],
+ "fields": [
+  {
+   "fetch_from": "sales_order.custom_site_address",
+   "fieldname": "site_address",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Site Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Link",
+   "label": "Sales Order",
+   "options": "Sales Order",
+   "search_index": 1
+  },
+  {
+   "fetch_from": "site_address.custom_access_notes",
+   "fieldname": "site_access_notes",
+   "fieldtype": "Small Text",
+   "label": "Site Access Notes"
+  },
+  {
+   "fetch_from": "site_address.custom_site_notes",
+   "fieldname": "site_notes",
+   "fieldtype": "Small Text",
+   "label": "Site Notes"
+  },
+  {
+   "depends_on": "\r\n",
+   "fieldname": "office_use_only_column",
+   "fieldtype": "Column Break",
+   "hidden": 1,
+   "label": "Office Use Only"
+  },
+  {
+   "default": "0",
+   "fieldname": "job_paperwork_completed",
+   "fieldtype": "Check",
+   "in_filter": 1,
+   "label": "Job Office Paperwork Completed"
+  },
+  {
+   "fieldname": "tech_status",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Tech Status"
+  },
+  {
+   "fieldname": "office_status",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Office Status"
+  },
+  {
+   "default": "0",
+   "fieldname": "critical_defect",
+   "fieldtype": "Check",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Critical Defect"
+  },
+  {
+   "default": "0",
+   "fieldname": "pump_offline",
+   "fieldtype": "Check",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Pump Offline"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "group": "Maintenance",
+   "link_doctype": "Pump Maintenance Report",
+   "link_fieldname": "job_number"
+  },
+  {
+   "group": "Maintenance",
+   "link_doctype": "Field Service Report",
+   "link_fieldname": "job_number"
+  },
+  {
+   "group": "Maintenance",
+   "link_doctype": "Battery Report",
+   "link_fieldname": "job_number"
+  },
+  {
+   "group": "Maintenance",
+   "link_doctype": "Flow Test Report",
+   "link_fieldname": "job_number"
+  },
+  {
+   "group": "Maintenance",
+   "link_doctype": "Refuel Report",
+   "link_fieldname": "job_number"
+  },
+  {
+   "group": "Maintenance",
+   "link_doctype": "Commisioning",
+   "link_fieldname": "job_number"
+  },
+  {
+   "link_doctype": "Quotation",
+   "link_fieldname": "custom_previous_job_number"
+  },
+  {
+   "group": "Maintenance",
+   "link_doctype": "Defects",
+   "link_fieldname": "job_number"
+  }
+ ],
+ "modified": "2024-06-11 19:56:32.037830",
+ "modified_by": "Administrator",
+ "module": "Fire Pump System",
+ "name": "Job",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

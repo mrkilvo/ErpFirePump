@@ -1,0 +1,105 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "format:{address}-{water_tank_number}",
+ "creation": "2024-06-11 17:06:16.747880",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "address",
+  "water_tank_number",
+  "water_tank_shape",
+  "tank_liner",
+  "construction",
+  "water_tank_length",
+  "water_tank_width",
+  "water_tank_depth",
+  "water_tank_capacity"
+ ],
+ "fields": [
+  {
+   "fieldname": "address",
+   "fieldtype": "Link",
+   "label": "Address",
+   "options": "Address",
+   "search_index": 1
+  },
+  {
+   "fieldname": "water_tank_number",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Water Tank Number",
+   "options": "\nTank 1\nTank 2\nTank 3\nTank 4\nTank 5\nTank 6"
+  },
+  {
+   "fieldname": "water_tank_shape",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Water Tank Shape",
+   "options": "Rectangle\nRound"
+  },
+  {
+   "fieldname": "tank_liner",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Tank Liner",
+   "options": "Yes\nNo"
+  },
+  {
+   "description": "Measured in Meters",
+   "fieldname": "water_tank_length",
+   "fieldtype": "Data",
+   "label": "Water Tank Length"
+  },
+  {
+   "description": "Measured in Meters",
+   "fieldname": "water_tank_width",
+   "fieldtype": "Data",
+   "label": "Water Tank Width"
+  },
+  {
+   "description": "Measured in Meters",
+   "fieldname": "water_tank_depth",
+   "fieldtype": "Data",
+   "label": "Water Tank Depth"
+  },
+  {
+   "description": "Measured in Litres",
+   "fieldname": "water_tank_capacity",
+   "fieldtype": "Data",
+   "label": "Water Tank Capacity"
+  },
+  {
+   "fieldname": "construction",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Construction",
+   "options": "\nMetal\nConcrete\nBelow Ground"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-11 18:16:20.759254",
+ "modified_by": "Administrator",
+ "module": "Fire Pump System",
+ "name": "Water Tanks",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

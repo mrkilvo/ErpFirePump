@@ -1,0 +1,56 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-11 15:00:22.956318",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "job_number",
+  "pump_name",
+  "enter_current_level_"
+ ],
+ "fields": [
+  {
+   "fieldname": "job_number",
+   "fieldtype": "Link",
+   "label": "Job Number",
+   "options": "Job",
+   "search_index": 1
+  },
+  {
+   "fieldname": "pump_name",
+   "fieldtype": "Select",
+   "label": "Pump Name",
+   "options": "\nPump 1\nPump 2\nPump 3\nPump 4\nPump 5\nPump 6\nPump 7\nPump 8\nPump 9\nPump 10"
+  },
+  {
+   "fieldname": "enter_current_level_",
+   "fieldtype": "Percent",
+   "label": "Enter Current Level %"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-11 16:29:56.965787",
+ "modified_by": "Administrator",
+ "module": "Fire Pump System",
+ "name": "Refuel Report",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
