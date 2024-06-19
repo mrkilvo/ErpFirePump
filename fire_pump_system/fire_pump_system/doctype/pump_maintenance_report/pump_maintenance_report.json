@@ -10,8 +10,8 @@
   "column_break_tjbh",
   "job_number",
   "address",
-  "pump_name",
   "section_break_nwwt",
+  "pump_name",
   "pump_function"
  ],
  "fields": [
@@ -59,7 +59,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-11 21:10:23.290247",
+ "modified": "2024-06-19 14:11:46.102840",
  "modified_by": "Administrator",
  "module": "Fire Pump System",
  "name": "Pump Maintenance Report",

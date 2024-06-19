@@ -1,13 +1,17 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{job_number}-{pump_name}-{####}",
  "creation": "2024-06-11 15:00:22.956318",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "job_number",
   "pump_name",
-  "enter_current_level_"
+  "enter_current_level_",
+  "fuel_supplied_ltr",
+  "enter_final_level_",
+  "current_hours"
  ],
  "fields": [
   {
@@ -21,20 +25,36 @@
    "fieldname": "pump_name",
    "fieldtype": "Select",
    "label": "Pump Name",
-   "options": "\nPump 1\nPump 2\nPump 3\nPump 4\nPump 5\nPump 6\nPump 7\nPump 8\nPump 9\nPump 10"
+   "options": "\nPump 1\nPump 2\nPump 3\nPump 4\nPump 5\nPump 6\nPump 7\nPump 8\nPump 9\nPump 10\nFuel Drum"
   },
   {
    "fieldname": "enter_current_level_",
    "fieldtype": "Percent",
    "label": "Enter Current Level %"
+  },
+  {
+   "fieldname": "enter_final_level_",
+   "fieldtype": "Percent",
+   "label": "Enter Final Level %"
+  },
+  {
+   "fieldname": "fuel_supplied_ltr",
+   "fieldtype": "Int",
+   "label": "Fuel Supplied (Ltr)"
+  },
+  {
+   "fieldname": "current_hours",
+   "fieldtype": "Data",
+   "label": "Current Hours"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-11 16:29:56.965787",
+ "modified": "2024-06-19 14:10:47.218900",
  "modified_by": "Administrator",
  "module": "Fire Pump System",
  "name": "Refuel Report",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

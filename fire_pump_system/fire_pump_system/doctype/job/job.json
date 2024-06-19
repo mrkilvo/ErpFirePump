@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:JOB-M{#####}",
+ "autoname": "format:JOB-{######}",
  "creation": "2024-06-11 14:25:24.286010",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -67,7 +67,8 @@
    "in_filter": 1,
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "Tech Status"
+   "label": "Tech Status",
+   "options": "\nJob Started\nJob Finished\nRebook\nNo Access\nDid Not Attend"
   },
   {
    "fieldname": "office_status",
@@ -75,7 +76,8 @@
    "in_filter": 1,
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "Office Status"
+   "label": "Office Status",
+   "options": "Pending Job Completion"
   },
   {
    "default": "0",
@@ -138,7 +140,7 @@
    "link_fieldname": "job_number"
   }
  ],
- "modified": "2024-06-11 19:56:32.037830",
+ "modified": "2024-06-19 14:07:43.027429",
  "modified_by": "Administrator",
  "module": "Fire Pump System",
  "name": "Job",

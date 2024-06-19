@@ -1,26 +1,36 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{job_number}-{pump_name}-{####}",
  "creation": "2024-06-11 14:57:29.801481",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "job_number"
+  "job_number",
+  "pump_number"
  ],
  "fields": [
   {
    "fieldname": "job_number",
    "fieldtype": "Link",
    "label": "Job Number",
-   "options": "Job"
+   "options": "Job",
+   "search_index": 1
+  },
+  {
+   "fieldname": "pump_number",
+   "fieldtype": "Select",
+   "label": "Pump Number",
+   "options": "\nPump 1\nPump 2\nPump 3\nPump 4\nPump 5\nPump 6\nPump 7\nPump 8\nPump 9\nPump 10"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-11 14:57:49.927978",
+ "modified": "2024-06-19 13:59:37.998786",
  "modified_by": "Administrator",
  "module": "Fire Pump System",
  "name": "Battery Report",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

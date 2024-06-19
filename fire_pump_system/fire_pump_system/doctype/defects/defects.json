@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{job_number}-{pump_number}-{####}",
  "creation": "2024-06-11 16:01:10.984741",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -74,10 +75,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-11 16:15:12.253481",
+ "modified": "2024-06-19 14:03:17.806153",
  "modified_by": "Administrator",
  "module": "Fire Pump System",
  "name": "Defects",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

@@ -1,11 +1,14 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{job_number}-{pump_name}-{stage}-{####}",
  "creation": "2024-06-11 14:58:03.138831",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "job_number"
+  "job_number",
+  "pump_number",
+  "stage"
  ],
  "fields": [
   {
@@ -13,14 +16,27 @@
    "fieldtype": "Link",
    "label": "Job Number",
    "options": "Job"
+  },
+  {
+   "fieldname": "pump_number",
+   "fieldtype": "Select",
+   "label": "Pump Number",
+   "options": "\nPump 1\nPump 2\nPump 3\nPump 4\nPump 5\nPump 6\nPump 7\nPump 8\nPump 9\nPump 10"
+  },
+  {
+   "fieldname": "stage",
+   "fieldtype": "Select",
+   "label": "Stage",
+   "options": "\nStage 1\nStage 2\nStage 3\nStage 4\nStage 5\nStage 6\nStage 7\nStage 8"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-11 14:58:15.186016",
+ "modified": "2024-06-19 14:01:29.392709",
  "modified_by": "Administrator",
  "module": "Fire Pump System",
  "name": "Flow Test Report",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

@@ -1,26 +1,36 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{job_number}-{pump_number}-{####}",
  "creation": "2024-06-11 14:55:23.945797",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "job_number"
+  "job_number",
+  "pump_name"
  ],
  "fields": [
   {
    "fieldname": "job_number",
    "fieldtype": "Link",
    "label": "Job Number",
-   "options": "Job"
+   "options": "Job",
+   "search_index": 1
+  },
+  {
+   "fieldname": "pump_name",
+   "fieldtype": "Select",
+   "label": "Pump Name",
+   "options": "\nPump 1\nPump 2\nPump 3\nPump 4\nPump 5\nPump 6\nPump 7\nPump 8\nPump 9\nPump 10"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-11 14:55:42.888650",
+ "modified": "2024-06-19 14:09:15.757910",
  "modified_by": "Administrator",
  "module": "Fire Pump System",
  "name": "Field Service Report",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
