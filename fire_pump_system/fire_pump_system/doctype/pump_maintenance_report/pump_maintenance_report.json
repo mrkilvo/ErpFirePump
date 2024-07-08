@@ -12,14 +12,30 @@
   "address",
   "section_break_nwwt",
   "pump_name",
-  "pump_function"
+  "pump_function",
+  "driver_section",
+  "driver_column",
+  "driver_type",
+  "driver_make",
+  "driver_model",
+  "driver_serial",
+  "driver_power__kw",
+  "pump_column",
+  "pump_make",
+  "pump_model",
+  "pump_serial",
+  "pump_impeller",
+  "panel_column",
+  "panel_make",
+  "panel_model",
+  "panel_serial",
+  "panel_asset_no"
  ],
  "fields": [
   {
    "description": "These Fields are Hidden and are for System Use only",
    "fieldname": "job_number",
    "fieldtype": "Link",
-   "hidden": 1,
    "label": "Job Number",
    "options": "Job",
    "search_index": 1
@@ -29,7 +45,6 @@
    "fetch_from": "job_number.site_address",
    "fieldname": "address",
    "fieldtype": "Link",
-   "hidden": 1,
    "label": "Address",
    "options": "Address"
   },
@@ -55,11 +70,96 @@
   {
    "fieldname": "column_break_tjbh",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "driver_section",
+   "fieldtype": "Section Break",
+   "label": "Driver / Pump / Panel"
+  },
+  {
+   "fieldname": "driver_type",
+   "fieldtype": "Data",
+   "label": "Driver Type"
+  },
+  {
+   "fieldname": "driver_make",
+   "fieldtype": "Data",
+   "label": "Driver Make"
+  },
+  {
+   "fieldname": "driver_model",
+   "fieldtype": "Data",
+   "label": "Driver Model"
+  },
+  {
+   "fieldname": "driver_serial",
+   "fieldtype": "Data",
+   "label": "Driver Serial"
+  },
+  {
+   "fieldname": "driver_power__kw",
+   "fieldtype": "Data",
+   "label": "Driver Power / KW"
+  },
+  {
+   "fieldname": "driver_column",
+   "fieldtype": "Column Break",
+   "label": "Driver"
+  },
+  {
+   "fieldname": "pump_column",
+   "fieldtype": "Column Break",
+   "label": "Pump"
+  },
+  {
+   "fieldname": "pump_make",
+   "fieldtype": "Data",
+   "label": "Pump Make"
+  },
+  {
+   "fieldname": "pump_model",
+   "fieldtype": "Data",
+   "label": "Pump Model"
+  },
+  {
+   "fieldname": "pump_serial",
+   "fieldtype": "Data",
+   "label": "Pump Serial"
+  },
+  {
+   "fieldname": "pump_impeller",
+   "fieldtype": "Data",
+   "label": "Pump Impeller Size"
+  },
+  {
+   "fieldname": "panel_column",
+   "fieldtype": "Column Break",
+   "label": "Panel"
+  },
+  {
+   "fieldname": "panel_make",
+   "fieldtype": "Data",
+   "label": "Panel Make"
+  },
+  {
+   "fieldname": "panel_model",
+   "fieldtype": "Data",
+   "label": "Panel Model"
+  },
+  {
+   "fieldname": "panel_serial",
+   "fieldtype": "Data",
+   "label": "Panel Serial"
+  },
+  {
+   "fieldname": "panel_asset_no",
+   "fieldtype": "Data",
+   "label": "Panel Asset No"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-19 14:11:46.102840",
+ "modified": "2024-07-03 20:08:41.956339",
  "modified_by": "Administrator",
  "module": "Fire Pump System",
  "name": "Pump Maintenance Report",

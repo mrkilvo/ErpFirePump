@@ -8,14 +8,49 @@
  "field_order": [
   "job_number",
   "pump_number",
-  "stage"
+  "stage",
+  "block_plan_details_section",
+  "flow_1",
+  "flow_2",
+  "flow_3",
+  "flow_4",
+  "flow_5",
+  "flow_6",
+  "flow_7",
+  "column_break_qyra",
+  "kpa_1",
+  "kpa_2",
+  "kpa_3",
+  "kpa_4",
+  "kpa_5",
+  "kpa_6",
+  "kpa_7",
+  "column_break_ombs",
+  "duty_type",
+  "duty_type_2",
+  "duty_type_3",
+  "duty_type_4",
+  "duty_type_5",
+  "duty_type_6",
+  "duty_type_7",
+  "section_break_aqef",
+  "in_mercury",
+  "column_break_ctii",
+  "flow",
+  "column_break_keat",
+  "suction_pressure",
+  "column_break_imdu",
+  "discharge_pressure",
+  "column_break_clov",
+  "rpm"
  ],
  "fields": [
   {
    "fieldname": "job_number",
    "fieldtype": "Link",
    "label": "Job Number",
-   "options": "Job"
+   "options": "Job",
+   "search_index": 1
   },
   {
    "fieldname": "pump_number",
@@ -28,11 +63,182 @@
    "fieldtype": "Select",
    "label": "Stage",
    "options": "\nStage 1\nStage 2\nStage 3\nStage 4\nStage 5\nStage 6\nStage 7\nStage 8"
+  },
+  {
+   "fieldname": "block_plan_details_section",
+   "fieldtype": "Section Break",
+   "label": "Block Plan Details"
+  },
+  {
+   "fieldname": "flow_1",
+   "fieldtype": "Data",
+   "label": "Flow 1"
+  },
+  {
+   "fieldname": "column_break_qyra",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "kpa_1",
+   "fieldtype": "Data",
+   "label": "KPA 1"
+  },
+  {
+   "fieldname": "column_break_ombs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "duty_type",
+   "fieldtype": "Select",
+   "label": "Duty Type",
+   "options": "\nSystem Duty\nPump Duty\nPump Duty 130%\nPump Duty 150%"
+  },
+  {
+   "fieldname": "flow_2",
+   "fieldtype": "Data",
+   "label": "Flow 2"
+  },
+  {
+   "fieldname": "flow_3",
+   "fieldtype": "Data",
+   "label": "Flow 3"
+  },
+  {
+   "fieldname": "flow_4",
+   "fieldtype": "Data",
+   "label": "Flow 4"
+  },
+  {
+   "fieldname": "flow_5",
+   "fieldtype": "Data",
+   "label": "Flow 5"
+  },
+  {
+   "fieldname": "flow_6",
+   "fieldtype": "Data",
+   "label": "Flow 6"
+  },
+  {
+   "fieldname": "flow_7",
+   "fieldtype": "Data",
+   "label": "Flow 7"
+  },
+  {
+   "fieldname": "kpa_2",
+   "fieldtype": "Data",
+   "label": "KPA 2"
+  },
+  {
+   "fieldname": "kpa_3",
+   "fieldtype": "Data",
+   "label": "KPA 3"
+  },
+  {
+   "fieldname": "kpa_4",
+   "fieldtype": "Data",
+   "label": "KPA 4"
+  },
+  {
+   "fieldname": "kpa_5",
+   "fieldtype": "Data",
+   "label": "KPA 5"
+  },
+  {
+   "fieldname": "kpa_6",
+   "fieldtype": "Data",
+   "label": "KPA 6"
+  },
+  {
+   "fieldname": "kpa_7",
+   "fieldtype": "Data",
+   "label": "KPA 7"
+  },
+  {
+   "fieldname": "duty_type_2",
+   "fieldtype": "Select",
+   "label": "Duty Type 2",
+   "options": "\nSystem Duty\nPump Duty\nPump Duty 130%\nPump Duty 150%"
+  },
+  {
+   "fieldname": "duty_type_3",
+   "fieldtype": "Select",
+   "label": "Duty Type 3",
+   "options": "\nSystem Duty\nPump Duty\nPump Duty 130%\nPump Duty 150%"
+  },
+  {
+   "fieldname": "duty_type_4",
+   "fieldtype": "Select",
+   "label": "Duty Type 4",
+   "options": "\nSystem Duty\nPump Duty\nPump Duty 130%\nPump Duty 150%"
+  },
+  {
+   "fieldname": "duty_type_5",
+   "fieldtype": "Select",
+   "label": "Duty Type 5",
+   "options": "\nSystem Duty\nPump Duty\nPump Duty 130%\nPump Duty 150%"
+  },
+  {
+   "fieldname": "duty_type_6",
+   "fieldtype": "Select",
+   "label": "Duty Type 6",
+   "options": "\nSystem Duty\nPump Duty\nPump Duty 130%\nPump Duty 150%"
+  },
+  {
+   "fieldname": "duty_type_7",
+   "fieldtype": "Select",
+   "label": "Duty Type 7",
+   "options": "\nSystem Duty\nPump Duty\nPump Duty 130%\nPump Duty 150%"
+  },
+  {
+   "fieldname": "section_break_aqef",
+   "fieldtype": "Section Break",
+   "label": "Flow Results"
+  },
+  {
+   "fieldname": "in_mercury",
+   "fieldtype": "Float",
+   "label": "In Mercury "
+  },
+  {
+   "fieldname": "column_break_ctii",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "flow",
+   "fieldtype": "Float",
+   "label": "Flow"
+  },
+  {
+   "fieldname": "column_break_keat",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "suction_pressure",
+   "fieldtype": "Float",
+   "label": "Suction Pressure"
+  },
+  {
+   "fieldname": "column_break_imdu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "discharge_pressure",
+   "fieldtype": "Float",
+   "label": "Discharge Pressure"
+  },
+  {
+   "fieldname": "column_break_clov",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rpm",
+   "fieldtype": "Float",
+   "label": "RPM"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-19 14:01:29.392709",
+ "modified": "2024-07-04 18:40:39.355538",
  "modified_by": "Administrator",
  "module": "Fire Pump System",
  "name": "Flow Test Report",

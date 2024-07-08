@@ -50,7 +50,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-19 14:10:47.218900",
+ "modified": "2024-07-08 12:25:41.369866",
  "modified_by": "Administrator",
  "module": "Fire Pump System",
  "name": "Refuel Report",
@@ -72,5 +72,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "job_number"
 }

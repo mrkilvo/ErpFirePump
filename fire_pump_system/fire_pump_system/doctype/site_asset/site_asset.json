@@ -84,8 +84,10 @@
  "fields": [
   {
    "fieldname": "site_asset_address",
-   "fieldtype": "Data",
-   "label": "Site Asset Address"
+   "fieldtype": "Link",
+   "label": "Site Asset Address",
+   "options": "Address",
+   "search_index": 1
   },
   {
    "fieldname": "pump_name",
@@ -269,7 +271,7 @@
   },
   {
    "fieldname": "main_relief_stage_1_type",
-   "fieldtype": "Link",
+   "fieldtype": "Data",
    "label": "Main Relief Stage 1 Type",
    "options": "Main Relief Valve Type"
   },
@@ -302,7 +304,7 @@
   },
   {
    "fieldname": "main_relief_stage_1_size",
-   "fieldtype": "Link",
+   "fieldtype": "Data",
    "label": "Main Relief Stage 1 Size",
    "options": "Valve Sizes"
   },
@@ -334,7 +336,7 @@
   {
    "default": "Rectangle",
    "fieldname": "fuel_tank_type",
-   "fieldtype": "Select",
+   "fieldtype": "Data",
    "label": "Fuel Tank Type",
    "options": "Rectangle\nRound"
   },
@@ -371,7 +373,7 @@
   },
   {
    "fieldname": "strip_heater",
-   "fieldtype": "Select",
+   "fieldtype": "Data",
    "label": "Strip Heater",
    "options": "\nPlug In\nHard Wired\nNot Fitted"
   },
@@ -437,7 +439,7 @@
   },
   {
    "fieldname": "cooling_system",
-   "fieldtype": "Select",
+   "fieldtype": "Data",
    "label": "Cooling System",
    "options": "\nHeat Exchanger\nRadiator\nRaw Water\nElectric\nAir Cooled"
   },
@@ -460,7 +462,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-11 17:38:27.557132",
+ "modified": "2024-07-04 22:01:30.403695",
  "modified_by": "Administrator",
  "module": "Fire Pump System",
  "name": "Site Asset",
@@ -484,5 +486,6 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
- "title_field": "site_asset_address"
+ "title_field": "site_asset_address",
+ "translated_doctype": 1
 }
