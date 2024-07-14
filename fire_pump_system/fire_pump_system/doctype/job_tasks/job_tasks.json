@@ -1,0 +1,66 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-13 18:56:10.671638",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "task_name",
+  "sales_order",
+  "task_description_brief",
+  "job_time_in_hours",
+  "report_description"
+ ],
+ "fields": [
+  {
+   "fieldname": "task_name",
+   "fieldtype": "Data",
+   "label": "Task Name"
+  },
+  {
+   "fieldname": "task_description_brief",
+   "fieldtype": "Small Text",
+   "label": "Task Description Brief"
+  },
+  {
+   "fieldname": "job_time_in_hours",
+   "fieldtype": "Float",
+   "label": "Job Time in Hours"
+  },
+  {
+   "fieldname": "report_description",
+   "fieldtype": "Small Text",
+   "label": "Report Description"
+  },
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Link",
+   "label": "Sales Order",
+   "options": "Sales Order"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-13 19:18:58.735829",
+ "modified_by": "Administrator",
+ "module": "Fire Pump System",
+ "name": "Job Tasks",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
