@@ -1,0 +1,30 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "condition": "doc.date_of_birth and frappe.utils.now_datetime().strftime('%m-%d') == frappe.utils.getdate(doc.date_of_birth).strftime('%m-%d')\r\n",
+ "creation": "2024-07-24 19:10:29.262768",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Employee",
+ "enabled": 1,
+ "event": "Custom",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>Dear {{ doc.employee_name }},</p>\n<p>Wishing you a very Happy Birthday!</p>\n<p>Have a fantastic day!</p>",
+ "message_type": "Markdown",
+ "modified": "2024-07-24 19:10:29.262768",
+ "modified_by": "Administrator",
+ "module": "Fire Pump System",
+ "name": "Send Employee Birthday Wishes",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "condition": "doc.employee_email",
+   "receiver_by_document_field": "owner"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Happy Birthday"
+}

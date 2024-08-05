@@ -1,0 +1,262 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-18 13:27:52.330103",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "engine_make",
+  "engine_model",
+  "engine_components_section",
+  "head_gasket",
+  "rocker_cover_gasket",
+  "gasket_set",
+  "head_bolts",
+  "turbo__charger",
+  "sensors_section",
+  "coolant_temperature_sensor",
+  "speed_sensor",
+  "oil_pressure_sensor",
+  "cooling_system_section",
+  "heat_exchanger",
+  "water_pump",
+  "thermostat",
+  "thermostat_housing",
+  "fuel_system_section",
+  "fuel_pump",
+  "high_pressure_fuel_lines",
+  "lift_pump",
+  "filters_section",
+  "oil_filter_1",
+  "oil_filter_2",
+  "oil_filter_3",
+  "column_break_stjy",
+  "fuel_filter_1",
+  "fuel_filter_2",
+  "fuel_filter_3",
+  "column_break_dpvx",
+  "air_filter_1",
+  "air_filter_2",
+  "column_break_jkwj",
+  "coolant_filter"
+ ],
+ "fields": [
+  {
+   "fieldname": "engine_make",
+   "fieldtype": "Data",
+   "label": "Engine Make"
+  },
+  {
+   "fieldname": "engine_model",
+   "fieldtype": "Data",
+   "label": "Engine Model"
+  },
+  {
+   "fieldname": "engine_components_section",
+   "fieldtype": "Section Break",
+   "label": "Engine Components"
+  },
+  {
+   "fieldname": "head_gasket",
+   "fieldtype": "Link",
+   "label": "Head Gasket",
+   "options": "Item"
+  },
+  {
+   "fieldname": "cooling_system_section",
+   "fieldtype": "Section Break",
+   "label": "Cooling System"
+  },
+  {
+   "fieldname": "heat_exchanger",
+   "fieldtype": "Link",
+   "label": "Heat Exchanger",
+   "options": "Item"
+  },
+  {
+   "fieldname": "fuel_system_section",
+   "fieldtype": "Section Break",
+   "label": "Fuel System"
+  },
+  {
+   "fieldname": "fuel_pump",
+   "fieldtype": "Link",
+   "label": "Fuel Pump",
+   "options": "Item"
+  },
+  {
+   "fieldname": "water_pump",
+   "fieldtype": "Link",
+   "label": "Water Pump",
+   "options": "Item"
+  },
+  {
+   "fieldname": "thermostat",
+   "fieldtype": "Link",
+   "label": "Thermostat",
+   "options": "Item"
+  },
+  {
+   "fieldname": "rocker_cover_gasket",
+   "fieldtype": "Link",
+   "label": "Rocker Cover Gasket",
+   "options": "Item"
+  },
+  {
+   "fieldname": "gasket_set",
+   "fieldtype": "Link",
+   "label": "Gasket Set",
+   "options": "Item"
+  },
+  {
+   "fieldname": "head_bolts",
+   "fieldtype": "Link",
+   "label": "Head Bolts",
+   "options": "Item"
+  },
+  {
+   "fieldname": "turbo__charger",
+   "fieldtype": "Link",
+   "label": "Turbo  Charger",
+   "options": "Item"
+  },
+  {
+   "fieldname": "coolant_temperature_sensor",
+   "fieldtype": "Link",
+   "label": "Coolant Temperature Sensor",
+   "options": "Item"
+  },
+  {
+   "fieldname": "sensors_section",
+   "fieldtype": "Section Break",
+   "label": "Sensors"
+  },
+  {
+   "fieldname": "speed_sensor",
+   "fieldtype": "Link",
+   "label": "Speed Sensor",
+   "options": "Item"
+  },
+  {
+   "fieldname": "oil_pressure_sensor",
+   "fieldtype": "Link",
+   "label": "Oil Pressure Sensor",
+   "options": "Item"
+  },
+  {
+   "fieldname": "thermostat_housing",
+   "fieldtype": "Link",
+   "label": "Thermostat Housing",
+   "options": "Item"
+  },
+  {
+   "fieldname": "lift_pump",
+   "fieldtype": "Link",
+   "label": "Lift Pump",
+   "options": "Item"
+  },
+  {
+   "fieldname": "high_pressure_fuel_lines",
+   "fieldtype": "Link",
+   "label": "High Pressure Fuel Lines",
+   "options": "Item"
+  },
+  {
+   "fieldname": "filters_section",
+   "fieldtype": "Section Break",
+   "label": "Filters"
+  },
+  {
+   "fieldname": "oil_filter_1",
+   "fieldtype": "Link",
+   "label": "Oil Filter 1",
+   "options": "Item"
+  },
+  {
+   "fieldname": "oil_filter_2",
+   "fieldtype": "Link",
+   "label": "Oil Filter 2",
+   "options": "Item"
+  },
+  {
+   "fieldname": "oil_filter_3",
+   "fieldtype": "Link",
+   "label": "Oil Filter 3",
+   "options": "Item"
+  },
+  {
+   "fieldname": "fuel_filter_1",
+   "fieldtype": "Link",
+   "label": "Fuel Filter 1",
+   "options": "Item"
+  },
+  {
+   "fieldname": "fuel_filter_2",
+   "fieldtype": "Link",
+   "label": "Fuel Filter 2",
+   "options": "Item"
+  },
+  {
+   "fieldname": "fuel_filter_3",
+   "fieldtype": "Link",
+   "label": "Fuel Filter 3",
+   "options": "Item"
+  },
+  {
+   "fieldname": "air_filter_1",
+   "fieldtype": "Link",
+   "label": "Air Filter 1",
+   "options": "Item"
+  },
+  {
+   "fieldname": "air_filter_2",
+   "fieldtype": "Link",
+   "label": "Air Filter 2",
+   "options": "Item"
+  },
+  {
+   "fieldname": "coolant_filter",
+   "fieldtype": "Link",
+   "label": "Coolant Filter",
+   "options": "Item"
+  },
+  {
+   "fieldname": "column_break_stjy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_dpvx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_jkwj",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-18 15:37:58.861785",
+ "modified_by": "Administrator",
+ "module": "Fire Pump System",
+ "name": "ENGINE PARTS",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "engine_model",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "engine_model"
+}

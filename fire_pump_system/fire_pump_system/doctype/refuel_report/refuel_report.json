@@ -7,6 +7,7 @@
  "engine": "InnoDB",
  "field_order": [
   "job_number",
+  "address",
   "pump_name",
   "enter_current_level_",
   "fuel_supplied_ltr",
@@ -17,40 +18,60 @@
   {
    "fieldname": "job_number",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Job Number",
    "options": "Job",
+   "reqd": 1,
    "search_index": 1
   },
   {
    "fieldname": "pump_name",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Pump Name",
-   "options": "\nPump 1\nPump 2\nPump 3\nPump 4\nPump 5\nPump 6\nPump 7\nPump 8\nPump 9\nPump 10\nFuel Drum"
+   "options": "\nPump 1\nPump 2\nPump 3\nPump 4\nPump 5\nPump 6\nPump 7\nPump 8\nPump 9\nPump 10\nFuel Drum",
+   "reqd": 1
   },
   {
    "fieldname": "enter_current_level_",
    "fieldtype": "Percent",
-   "label": "Enter Current Level %"
+   "in_list_view": 1,
+   "label": "Enter Current Level %",
+   "reqd": 1
   },
   {
    "fieldname": "enter_final_level_",
    "fieldtype": "Percent",
-   "label": "Enter Final Level %"
+   "label": "Enter Final Level %",
+   "reqd": 1
   },
   {
    "fieldname": "fuel_supplied_ltr",
    "fieldtype": "Int",
-   "label": "Fuel Supplied (Ltr)"
+   "in_list_view": 1,
+   "label": "Fuel Supplied (Ltr)",
+   "reqd": 1
   },
   {
    "fieldname": "current_hours",
    "fieldtype": "Data",
-   "label": "Current Hours"
+   "label": "Current Hours",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "job_number.site_address",
+   "fieldname": "address",
+   "fieldtype": "Link",
+   "label": "Address",
+   "options": "Address",
+   "read_only": 1,
+   "reqd": 1,
+   "set_only_once": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-08 12:25:41.369866",
+ "modified": "2024-07-26 13:55:04.196476",
  "modified_by": "Administrator",
  "module": "Fire Pump System",
  "name": "Refuel Report",

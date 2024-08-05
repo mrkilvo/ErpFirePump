@@ -19,10 +19,12 @@
   {
    "fieldname": "job_number",
    "fieldtype": "Link",
-   "hidden": 1,
    "label": "Job Number",
    "options": "Job",
-   "search_index": 1
+   "read_only": 1,
+   "reqd": 1,
+   "search_index": 1,
+   "set_only_once": 1
   },
   {
    "fetch_from": "job_number.site_address",
@@ -75,7 +77,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-19 14:03:17.806153",
+ "modified": "2024-07-26 13:50:58.597515",
  "modified_by": "Administrator",
  "module": "Fire Pump System",
  "name": "Defects",
@@ -97,5 +99,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "job_number"
 }

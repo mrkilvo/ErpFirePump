@@ -20,6 +20,7 @@
   "driver_model",
   "driver_serial",
   "driver_power__kw",
+  "updated_details",
   "pump_column",
   "pump_make",
   "pump_model",
@@ -29,7 +30,112 @@
   "panel_make",
   "panel_model",
   "panel_serial",
-  "panel_asset_no"
+  "panel_asset_no",
+  "batteries_section",
+  "start_batteries_column",
+  "start_battery_quantity",
+  "start_battery_size",
+  "start_battery_voltage",
+  "start_battery_date_of_installation",
+  "column_break_npaw",
+  "control_battery_quantity",
+  "control_battery_size",
+  "control_battery_voltage",
+  "control_battery_date_of_installation",
+  "section_break_gfnj",
+  "check_oil_level",
+  "check_fuel_level_",
+  "check_cooling_system",
+  "cooling_system_type",
+  "cooling_system_drain_flush_and_refill",
+  "column_break_gmdz",
+  "hose_condition",
+  "check__clean_strainer",
+  "cooling_water_flow",
+  "check_drive_belts__guards",
+  "check_air_filter",
+  "section_break_rwwj",
+  "check_for_leaks_oil__water__fuel",
+  "check_motor_bearings",
+  "section_break_wfwv",
+  "block_heaters",
+  "wall__strip_heaters",
+  "column_break_cyzm",
+  "check_for_exhaust_leaks",
+  "check_for_exhaust_lagging",
+  "coupling_section",
+  "check_alignment",
+  "check_coupling_rubbers",
+  "check_grease_hardy_spicer",
+  "pump_section",
+  "pump_seal_type",
+  "pump_packing_size__seal_condition",
+  "pump_bearings",
+  "check_clean_gland_drains",
+  "gauges_section",
+  "suction",
+  "discharge",
+  "fuel_tank",
+  "controller_section",
+  "controller_check_column",
+  "check_condition__panel_lights",
+  "check_stop_solenoid",
+  "column_break_oxvt",
+  "panel_start",
+  "emergency_start",
+  "pressure_switch_start",
+  "column_break_eldy",
+  "start_battery_charger",
+  "control_battery_charger",
+  "load_test_batteries",
+  "motor_testing_section",
+  "measurements_stage_1_column",
+  "hour_meter_s1",
+  "rpm_panel_s1",
+  "rpm_tacho_s1",
+  "water_temp_s1",
+  "oil_pressure_s1",
+  "pump_bearing_temp_front_s1",
+  "pump_bearing_temp_rear_s1",
+  "measurements_stage_2_column",
+  "hour_meter_s2",
+  "rpm_panel_s2",
+  "rpm_tacho_s2",
+  "water_temp_s2",
+  "oil_pressure_s2",
+  "pump_bearing_temp_front_s2",
+  "pump_bearing_temp_rear_s2",
+  "measurements_stage_3_column",
+  "hour_meter_s3",
+  "rpm_panel_s3",
+  "rpm_tacho_s3",
+  "water_temp_s3",
+  "oil_pressure_s3",
+  "pump_bearing_temp_front_s3",
+  "pump_bearing_temp_rear_s3",
+  "motor_testing_electric_section",
+  "electric_motor_amps",
+  "electric_motor_rpm",
+  "pump_bearing_temp_front",
+  "pump_bearing_temp_rear",
+  "motor_bearing_temp_front",
+  "motor_bearing_temp_rear",
+  "column_break_tajq",
+  "column_break_etkd",
+  "section_break_bndm",
+  "water_pressures_column",
+  "suction_kpa",
+  "discharge_kpa",
+  "alarms_column",
+  "power_fail__run",
+  "fail_to_start",
+  "jacking_pumps_column",
+  "accumulator",
+  "jp_cut_inout",
+  "water_storage_tanks_column",
+  "level_indicator",
+  "ladder__hatch_rail",
+  "quick_fill__top_up"
  ],
  "fields": [
   {
@@ -55,7 +161,9 @@
    "in_list_view": 1,
    "label": "Pump Name",
    "options": "\nPump 1\nPump 2\nPump 3\nPump 4\nPump 5\nPump 6\nPump 7\nPump 8\nPump 9\nPump 10",
-   "reqd": 1
+   "print_width": "10",
+   "reqd": 1,
+   "width": "10"
   },
   {
    "fieldname": "section_break_nwwt",
@@ -155,11 +263,597 @@
    "fieldname": "panel_asset_no",
    "fieldtype": "Data",
    "label": "Panel Asset No"
+  },
+  {
+   "fieldname": "batteries_section",
+   "fieldtype": "Section Break",
+   "label": "Batteries"
+  },
+  {
+   "fieldname": "start_battery_quantity",
+   "fieldtype": "Select",
+   "label": "Start Battery Quantity",
+   "length": 5,
+   "options": "\n1\n2\n3\n4",
+   "print_width": "5",
+   "width": "5"
+  },
+  {
+   "fieldname": "start_battery_date_of_installation",
+   "fieldtype": "Date",
+   "label": "Start Battery Date of Installation"
+  },
+  {
+   "fieldname": "column_break_npaw",
+   "fieldtype": "Column Break",
+   "label": "Control Batteries"
+  },
+  {
+   "fieldname": "control_battery_quantity",
+   "fieldtype": "Select",
+   "label": "Control Battery Quantity",
+   "length": 5,
+   "options": "\n1\n2\n3\n4",
+   "width": "5"
+  },
+  {
+   "fieldname": "control_battery_date_of_installation",
+   "fieldtype": "Date",
+   "label": "Control Battery Date of Installation"
+  },
+  {
+   "fieldname": "start_batteries_column",
+   "fieldtype": "Column Break",
+   "label": "Start Batteries"
+  },
+  {
+   "fieldname": "start_battery_voltage",
+   "fieldtype": "Float",
+   "label": "Start Battery Voltage",
+   "length": 5,
+   "precision": "2",
+   "print_width": "5",
+   "width": "5"
+  },
+  {
+   "fieldname": "control_battery_voltage",
+   "fieldtype": "Float",
+   "label": "Control Battery Voltage",
+   "length": 5,
+   "precision": "2",
+   "print_width": "5",
+   "width": "5"
+  },
+  {
+   "fieldname": "start_battery_size",
+   "fieldtype": "Int",
+   "label": "Start Battery Size",
+   "length": 5,
+   "print_width": "5",
+   "width": "5"
+  },
+  {
+   "fieldname": "control_battery_size",
+   "fieldtype": "Int",
+   "label": "Control Battery Size",
+   "length": 5,
+   "width": "5"
+  },
+  {
+   "fieldname": "section_break_gfnj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "check_oil_level",
+   "fieldtype": "Select",
+   "label": "Check Oil Level",
+   "options": "\nPass\nFail"
+  },
+  {
+   "description": "If % is Less than 75% Then Fail",
+   "fieldname": "check_fuel_level_",
+   "fieldtype": "Percent",
+   "label": "Check Fuel Level %",
+   "options": "\nPass\nFail"
+  },
+  {
+   "fieldname": "check_cooling_system",
+   "fieldtype": "Select",
+   "label": "Check Cooling System",
+   "options": "\nPass\nFail"
+  },
+  {
+   "fieldname": "cooling_system_type",
+   "fieldtype": "Select",
+   "label": "Cooling System Type",
+   "options": "\nHeat Exchanger\nRadiator\nAir Cooled\nElectric\nN/A"
+  },
+  {
+   "fieldname": "cooling_system_drain_flush_and_refill",
+   "fieldtype": "Select",
+   "label": "Cooling System Drain, Flush and Refill",
+   "options": "\nN/A\nCompleted"
+  },
+  {
+   "fieldname": "column_break_gmdz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hose_condition",
+   "fieldtype": "Select",
+   "label": "Hose Condition",
+   "options": "\nPass\nFail"
+  },
+  {
+   "fieldname": "check__clean_strainer",
+   "fieldtype": "Select",
+   "label": "Check / Clean Strainer",
+   "options": "\nPass\nFail"
+  },
+  {
+   "fieldname": "cooling_water_flow",
+   "fieldtype": "Select",
+   "label": "Cooling Water Flow",
+   "options": "\nPass\nFail"
+  },
+  {
+   "fieldname": "check_drive_belts__guards",
+   "fieldtype": "Select",
+   "label": "Check Drive Belts / Guards",
+   "options": "\nPass\nFail"
+  },
+  {
+   "fieldname": "section_break_wfwv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "block_heaters",
+   "fieldtype": "Select",
+   "label": "Block Heaters",
+   "options": "\nPass\nFail"
+  },
+  {
+   "fieldname": "wall__strip_heaters",
+   "fieldtype": "Select",
+   "label": "Wall / Strip Heaters",
+   "options": "\nPass\nFail"
+  },
+  {
+   "fieldname": "column_break_cyzm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "check_for_exhaust_leaks",
+   "fieldtype": "Select",
+   "label": "Check for Exhaust Leaks",
+   "options": "\nPass\nFail"
+  },
+  {
+   "fieldname": "check_for_exhaust_lagging",
+   "fieldtype": "Select",
+   "label": "Check for Exhaust Lagging",
+   "options": "\nPass\nFail"
+  },
+  {
+   "fieldname": "check_air_filter",
+   "fieldtype": "Select",
+   "label": "Check Air Filter",
+   "options": "\nPass\nFail"
+  },
+  {
+   "fieldname": "section_break_rwwj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "check_for_leaks_oil__water__fuel",
+   "fieldtype": "Select",
+   "label": "Check for Leaks Oil / Water / Fuel",
+   "options": "\nPass\nFail"
+  },
+  {
+   "fieldname": "check_motor_bearings",
+   "fieldtype": "Select",
+   "label": "Check Motor Bearings",
+   "options": "\nPass\nFail"
+  },
+  {
+   "fieldname": "coupling_section",
+   "fieldtype": "Section Break",
+   "label": "Coupling"
+  },
+  {
+   "fieldname": "check_alignment",
+   "fieldtype": "Select",
+   "label": "Check Alignment",
+   "options": "\nPass\nFail"
+  },
+  {
+   "fieldname": "check_coupling_rubbers",
+   "fieldtype": "Select",
+   "label": "Check Coupling Rubbers",
+   "options": "\nPass\nFail"
+  },
+  {
+   "fieldname": "check_grease_hardy_spicer",
+   "fieldtype": "Select",
+   "label": "Check Grease Hardy Spicer",
+   "options": "\nPass\nFail"
+  },
+  {
+   "fieldname": "pump_section",
+   "fieldtype": "Section Break",
+   "label": "Pump"
+  },
+  {
+   "fieldname": "pump_seal_type",
+   "fieldtype": "Select",
+   "label": "Pump Seal Type",
+   "options": "\nMech Seal\nGland Pack"
+  },
+  {
+   "fieldname": "pump_packing_size__seal_condition",
+   "fieldtype": "Select",
+   "label": "Pump Packing Size / Seal Condition",
+   "options": "\nMech Seal\nGland Pack"
+  },
+  {
+   "fieldname": "pump_bearings",
+   "fieldtype": "Select",
+   "label": "Pump Bearings",
+   "options": "\nMech Seal\nGland Pack"
+  },
+  {
+   "fieldname": "check_clean_gland_drains",
+   "fieldtype": "Select",
+   "label": "Check Clean Gland Drains",
+   "options": "\nMech Seal\nGland Pack"
+  },
+  {
+   "fieldname": "gauges_section",
+   "fieldtype": "Section Break",
+   "label": "Gauges"
+  },
+  {
+   "fieldname": "suction",
+   "fieldtype": "Select",
+   "label": "Suction",
+   "options": "\nPass\nFail"
+  },
+  {
+   "fieldname": "discharge",
+   "fieldtype": "Select",
+   "label": "Discharge",
+   "options": "\nPass\nFail"
+  },
+  {
+   "fieldname": "fuel_tank",
+   "fieldtype": "Select",
+   "label": "Fuel Tank",
+   "options": "\nPass\nFail"
+  },
+  {
+   "fieldname": "controller_section",
+   "fieldtype": "Section Break",
+   "label": "Controller"
+  },
+  {
+   "fieldname": "check_condition__panel_lights",
+   "fieldtype": "Select",
+   "label": "Check condition / Panel Lights",
+   "options": "\nPass\nFail"
+  },
+  {
+   "fieldname": "check_stop_solenoid",
+   "fieldtype": "Select",
+   "label": "Check Stop Solenoid",
+   "options": "\nPass\nFail"
+  },
+  {
+   "fieldname": "column_break_oxvt",
+   "fieldtype": "Column Break",
+   "label": "Check Pump Start"
+  },
+  {
+   "fieldname": "panel_start",
+   "fieldtype": "Select",
+   "label": "Panel Start",
+   "options": "\nPass\nFail"
+  },
+  {
+   "fieldname": "emergency_start",
+   "fieldtype": "Select",
+   "label": "Emergency Start",
+   "options": "\nPass\nFail"
+  },
+  {
+   "fieldname": "pressure_switch_start",
+   "fieldtype": "Select",
+   "label": "Pressure Switch Start",
+   "options": "\nPass\nFail"
+  },
+  {
+   "fieldname": "column_break_eldy",
+   "fieldtype": "Column Break",
+   "label": "Check Chargers"
+  },
+  {
+   "fieldname": "start_battery_charger",
+   "fieldtype": "Select",
+   "label": "Start Battery Charger",
+   "options": "\nPass\nFail"
+  },
+  {
+   "fieldname": "control_battery_charger",
+   "fieldtype": "Select",
+   "label": "Control Battery Charger",
+   "options": "\nPass\nFail"
+  },
+  {
+   "fieldname": "load_test_batteries",
+   "fieldtype": "Select",
+   "label": "Load Test Batteries",
+   "options": "\nPass\nFail"
+  },
+  {
+   "fieldname": "controller_check_column",
+   "fieldtype": "Column Break",
+   "label": "Controller Check"
+  },
+  {
+   "fieldname": "motor_testing_section",
+   "fieldtype": "Section Break",
+   "label": "Motor Testing Diesel"
+  },
+  {
+   "fieldname": "measurements_stage_1_column",
+   "fieldtype": "Column Break",
+   "label": "Measurements Stage 1"
+  },
+  {
+   "fieldname": "hour_meter_s1",
+   "fieldtype": "Data",
+   "label": "Hour Meter S1"
+  },
+  {
+   "fieldname": "measurements_stage_2_column",
+   "fieldtype": "Column Break",
+   "label": "Measurements Stage 2"
+  },
+  {
+   "fieldname": "measurements_stage_3_column",
+   "fieldtype": "Column Break",
+   "label": "Measurements Stage 3"
+  },
+  {
+   "fieldname": "hour_meter_s2",
+   "fieldtype": "Data",
+   "label": "Hour Meter S2"
+  },
+  {
+   "fieldname": "hour_meter_s3",
+   "fieldtype": "Data",
+   "label": "Hour Meter S3"
+  },
+  {
+   "fieldname": "rpm_panel_s1",
+   "fieldtype": "Int",
+   "label": "RPM Panel S1"
+  },
+  {
+   "fieldname": "rpm_panel_s2",
+   "fieldtype": "Int",
+   "label": "RPM Panel S2"
+  },
+  {
+   "fieldname": "rpm_panel_s3",
+   "fieldtype": "Int",
+   "label": "RPM Panel S3"
+  },
+  {
+   "fieldname": "rpm_tacho_s1",
+   "fieldtype": "Int",
+   "label": "RPM Tacho S1"
+  },
+  {
+   "fieldname": "rpm_tacho_s2",
+   "fieldtype": "Int",
+   "label": "RPM Tacho S2"
+  },
+  {
+   "fieldname": "rpm_tacho_s3",
+   "fieldtype": "Int",
+   "label": "RPM Tacho S3"
+  },
+  {
+   "fieldname": "water_temp_s1",
+   "fieldtype": "Int",
+   "label": "Water Temp S1"
+  },
+  {
+   "fieldname": "water_temp_s2",
+   "fieldtype": "Int",
+   "label": "Water Temp S2"
+  },
+  {
+   "fieldname": "water_temp_s3",
+   "fieldtype": "Int",
+   "label": "Water Temp S3"
+  },
+  {
+   "fieldname": "oil_pressure_s1",
+   "fieldtype": "Int",
+   "label": "Oil Pressure S1"
+  },
+  {
+   "fieldname": "oil_pressure_s2",
+   "fieldtype": "Int",
+   "label": "Oil Pressure S2"
+  },
+  {
+   "fieldname": "oil_pressure_s3",
+   "fieldtype": "Int",
+   "label": "Oil Pressure S3"
+  },
+  {
+   "fieldname": "pump_bearing_temp_front_s1",
+   "fieldtype": "Int",
+   "label": "Pump Bearing Temp Front S1"
+  },
+  {
+   "fieldname": "pump_bearing_temp_front_s2",
+   "fieldtype": "Int",
+   "label": "Pump Bearing Temp Front S2"
+  },
+  {
+   "fieldname": "pump_bearing_temp_front_s3",
+   "fieldtype": "Int",
+   "label": "Pump Bearing Temp Front S3"
+  },
+  {
+   "fieldname": "pump_bearing_temp_rear_s1",
+   "fieldtype": "Int",
+   "label": "Pump Bearing Temp Rear S1"
+  },
+  {
+   "fieldname": "pump_bearing_temp_rear_s2",
+   "fieldtype": "Int",
+   "label": "Pump Bearing Temp Rear S2"
+  },
+  {
+   "fieldname": "pump_bearing_temp_rear_s3",
+   "fieldtype": "Int",
+   "label": "Pump Bearing Temp Rear S3"
+  },
+  {
+   "fieldname": "motor_testing_electric_section",
+   "fieldtype": "Section Break",
+   "label": "Motor Testing Electric"
+  },
+  {
+   "fieldname": "electric_motor_amps",
+   "fieldtype": "Data",
+   "label": "Electric Motor Amps"
+  },
+  {
+   "fieldname": "electric_motor_rpm",
+   "fieldtype": "Data",
+   "label": "Electric Motor RPM"
+  },
+  {
+   "fieldname": "pump_bearing_temp_front",
+   "fieldtype": "Data",
+   "label": "Pump Bearing Temp Front"
+  },
+  {
+   "fieldname": "pump_bearing_temp_rear",
+   "fieldtype": "Data",
+   "label": "Pump Bearing Temp Rear"
+  },
+  {
+   "fieldname": "motor_bearing_temp_front",
+   "fieldtype": "Data",
+   "label": "Motor Bearing Temp Front"
+  },
+  {
+   "fieldname": "motor_bearing_temp_rear",
+   "fieldtype": "Data",
+   "label": "Motor Bearing Temp Rear"
+  },
+  {
+   "fieldname": "column_break_tajq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_etkd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_bndm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "water_pressures_column",
+   "fieldtype": "Column Break",
+   "label": "Water Pressures"
+  },
+  {
+   "fieldname": "suction_kpa",
+   "fieldtype": "Data",
+   "label": "Suction KPA"
+  },
+  {
+   "fieldname": "discharge_kpa",
+   "fieldtype": "Data",
+   "label": "Discharge KPA"
+  },
+  {
+   "fieldname": "alarms_column",
+   "fieldtype": "Column Break",
+   "label": "Alarms"
+  },
+  {
+   "fieldname": "power_fail__run",
+   "fieldtype": "Select",
+   "label": "Power Fail / Run",
+   "options": "\nPass\nFail"
+  },
+  {
+   "fieldname": "fail_to_start",
+   "fieldtype": "Select",
+   "label": "Fail to Start",
+   "options": "\nPass\nFail"
+  },
+  {
+   "fieldname": "jacking_pumps_column",
+   "fieldtype": "Column Break",
+   "label": "Jacking Pumps"
+  },
+  {
+   "fieldname": "accumulator",
+   "fieldtype": "Select",
+   "label": "Accumulator",
+   "options": "\nPass\nFail"
+  },
+  {
+   "fieldname": "jp_cut_inout",
+   "fieldtype": "Select",
+   "label": "JP Cut in/out",
+   "options": "\nPass\nFail"
+  },
+  {
+   "fieldname": "water_storage_tanks_column",
+   "fieldtype": "Column Break",
+   "label": "Water Storage Tanks"
+  },
+  {
+   "fieldname": "level_indicator",
+   "fieldtype": "Select",
+   "label": "Level Indicator",
+   "options": "\nPass\nFail"
+  },
+  {
+   "fieldname": "ladder__hatch_rail",
+   "fieldtype": "Select",
+   "label": "Ladder / Hatch Rail",
+   "options": "\nPass\nFail"
+  },
+  {
+   "fieldname": "quick_fill__top_up",
+   "fieldtype": "Select",
+   "label": "Quick Fill / Top up",
+   "options": "\nPass\nFail"
+  },
+  {
+   "default": "0",
+   "description": "If any details have changed above then please select this box to update the database",
+   "fieldname": "updated_details",
+   "fieldtype": "Check",
+   "label": "Updated Details"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-03 20:08:41.956339",
+ "modified": "2024-07-18 17:41:29.073847",
  "modified_by": "Administrator",
  "module": "Fire Pump System",
  "name": "Pump Maintenance Report",

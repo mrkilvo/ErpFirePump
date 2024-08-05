@@ -119,46 +119,47 @@
  "is_calendar_and_gantt": 1,
  "links": [
   {
-   "group": "Maintenance",
+   "group": "Annual Service",
    "link_doctype": "Pump Maintenance Report",
    "link_fieldname": "job_number"
   },
   {
-   "group": "Maintenance",
+   "group": "Reports",
    "link_doctype": "Field Service Report",
    "link_fieldname": "job_number"
   },
   {
-   "group": "Maintenance",
+   "group": "Reports",
    "link_doctype": "Battery Report",
    "link_fieldname": "job_number"
   },
   {
-   "group": "Maintenance",
+   "group": "Reports",
    "link_doctype": "Flow Test Report",
    "link_fieldname": "job_number"
   },
   {
-   "group": "Maintenance",
+   "group": "Reports",
    "link_doctype": "Refuel Report",
    "link_fieldname": "job_number"
   },
   {
-   "group": "Maintenance",
+   "group": "Commissioning",
    "link_doctype": "Commisioning",
    "link_fieldname": "job_number"
   },
   {
+   "group": "Quotations",
    "link_doctype": "Quotation",
    "link_fieldname": "custom_previous_job_number"
   },
   {
-   "group": "Maintenance",
+   "group": "Reports",
    "link_doctype": "Defects",
    "link_fieldname": "job_number"
   }
  ],
- "modified": "2024-07-13 17:29:14.591449",
+ "modified": "2024-07-17 15:45:07.482467",
  "modified_by": "Administrator",
  "module": "Fire Pump System",
  "name": "Job",
@@ -178,8 +179,11 @@
    "write": 1
   }
  ],
+ "show_preview_popup": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
  "track_views": 1
 }

@@ -7,14 +7,24 @@
  "engine": "InnoDB",
  "field_order": [
   "job_number",
-  "pump_name"
+  "pump_name",
+  "column_break_gorw",
+  "defect_type",
+  "section_break_ddvn",
+  "defect_description",
+  "defect_remedy",
+  "parts_required",
+  "estimated_hours_to_complete"
  ],
  "fields": [
   {
    "fieldname": "job_number",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Job Number",
    "options": "Job",
+   "read_only": 1,
+   "reqd": 1,
    "search_index": 1
   },
   {
@@ -22,11 +32,51 @@
    "fieldtype": "Select",
    "label": "Pump Name",
    "options": "\nPump 1\nPump 2\nPump 3\nPump 4\nPump 5\nPump 6\nPump 7\nPump 8\nPump 9\nPump 10"
+  },
+  {
+   "fieldname": "section_break_ddvn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "defect_description",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Defect Description",
+   "reqd": 1
+  },
+  {
+   "fieldname": "defect_remedy",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Defect Remedy",
+   "reqd": 1
+  },
+  {
+   "fieldname": "parts_required",
+   "fieldtype": "Small Text",
+   "label": "Parts Required"
+  },
+  {
+   "fieldname": "estimated_hours_to_complete",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Estimated Hours to Complete",
+   "precision": "0",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_gorw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "defect_type",
+   "fieldtype": "Select",
+   "label": "Defect Type"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-19 14:09:15.757910",
+ "modified": "2024-07-26 13:52:36.176622",
  "modified_by": "Administrator",
  "module": "Fire Pump System",
  "name": "Field Service Report",
@@ -48,5 +98,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "job_number"
 }
