@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{job_number}-{pump_number}-{####}",
+ "autoname": "format:{job_number}-{pump_name}-{####}",
  "creation": "2024-06-11 14:55:23.945797",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -11,6 +11,7 @@
   "column_break_gorw",
   "defect_type",
   "section_break_ddvn",
+  "standard_defect_selection",
   "defect_description",
   "defect_remedy",
   "parts_required",
@@ -18,6 +19,7 @@
  ],
  "fields": [
   {
+   "allow_in_quick_entry": 1,
    "fieldname": "job_number",
    "fieldtype": "Link",
    "in_list_view": 1,
@@ -28,6 +30,7 @@
    "search_index": 1
   },
   {
+   "allow_in_quick_entry": 1,
    "fieldname": "pump_name",
    "fieldtype": "Select",
    "label": "Pump Name",
@@ -38,6 +41,7 @@
    "fieldtype": "Section Break"
   },
   {
+   "allow_in_quick_entry": 1,
    "fieldname": "defect_description",
    "fieldtype": "Small Text",
    "in_list_view": 1,
@@ -45,6 +49,7 @@
    "reqd": 1
   },
   {
+   "allow_in_quick_entry": 1,
    "fieldname": "defect_remedy",
    "fieldtype": "Small Text",
    "in_list_view": 1,
@@ -52,11 +57,13 @@
    "reqd": 1
   },
   {
+   "allow_in_quick_entry": 1,
    "fieldname": "parts_required",
    "fieldtype": "Small Text",
    "label": "Parts Required"
   },
   {
+   "allow_in_quick_entry": 1,
    "fieldname": "estimated_hours_to_complete",
    "fieldtype": "Float",
    "in_list_view": 1,
@@ -69,14 +76,24 @@
    "fieldtype": "Column Break"
   },
   {
+   "allow_in_quick_entry": 1,
    "fieldname": "defect_type",
    "fieldtype": "Select",
-   "label": "Defect Type"
+   "label": "Status",
+   "options": "\nNone Critical\nCritical\nNone Conformance\nRecommendation\nOther\nAdvisory"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "description": "Use this if a standard defect is found",
+   "fieldname": "standard_defect_selection",
+   "fieldtype": "Link",
+   "label": "Standard Defect Selection",
+   "options": "Standard Defect Description"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-26 13:52:36.176622",
+ "modified": "2024-08-27 14:50:55.504372",
  "modified_by": "Administrator",
  "module": "Fire Pump System",
  "name": "Field Service Report",
@@ -96,8 +113,14 @@
    "write": 1
   }
  ],
+ "show_preview_popup": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": [],
+ "states": [
+  {
+   "color": "Red",
+   "title": "Critical"
+  }
+ ],
  "title_field": "job_number"
 }

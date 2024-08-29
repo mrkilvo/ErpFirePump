@@ -79,7 +79,13 @@
   "asset_images_tab",
   "pump",
   "panel",
-  "driver"
+  "driver",
+  "system_flow_requirements_tab",
+  "system_requirements_section",
+  "system_duties_lpm_column",
+  "system_duty_lpm",
+  "system_duties_kpa_column",
+  "system_duty_kpa"
  ],
  "fields": [
   {
@@ -101,8 +107,9 @@
   },
   {
    "fieldname": "pump_function",
-   "fieldtype": "Data",
-   "label": "Pump Function"
+   "fieldtype": "Link",
+   "label": "Pump Function",
+   "options": "Pump Functions"
   },
   {
    "fieldname": "pump_make",
@@ -126,8 +133,9 @@
   },
   {
    "fieldname": "driver_type",
-   "fieldtype": "Data",
-   "label": "Driver Type"
+   "fieldtype": "Link",
+   "label": "Driver Type",
+   "options": "Driver Type"
   },
   {
    "fieldname": "driver_make",
@@ -271,9 +279,9 @@
   },
   {
    "fieldname": "main_relief_stage_1_type",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "label": "Main Relief Stage 1 Type",
-   "options": "Main Relief Valve Type"
+   "options": "Main Relief Type"
   },
   {
    "fieldname": "column_break_pmos",
@@ -281,8 +289,9 @@
   },
   {
    "fieldname": "main_relief_stage_2_type",
-   "fieldtype": "Data",
-   "label": "Main Relief Stage 2 Type"
+   "fieldtype": "Link",
+   "label": "Main Relief Stage 2 Type",
+   "options": "Main Relief Type"
   },
   {
    "fieldname": "column_break_ghdr",
@@ -290,8 +299,9 @@
   },
   {
    "fieldname": "main_relief_stage_3_type",
-   "fieldtype": "Data",
-   "label": "Main Relief Stage 3 Type"
+   "fieldtype": "Link",
+   "label": "Main Relief Stage 3 Type",
+   "options": "Main Relief Type"
   },
   {
    "fieldname": "column_break_rqao",
@@ -299,29 +309,33 @@
   },
   {
    "fieldname": "main_relief_stage_4_type",
-   "fieldtype": "Data",
-   "label": "Main Relief Stage 4 Type"
+   "fieldtype": "Link",
+   "label": "Main Relief Stage 4 Type",
+   "options": "Main Relief Type"
   },
   {
    "fieldname": "main_relief_stage_1_size",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "label": "Main Relief Stage 1 Size",
-   "options": "Valve Sizes"
+   "options": "Main Relief Valve Size"
   },
   {
    "fieldname": "main_relief_stage_2_size",
-   "fieldtype": "Data",
-   "label": "Main Relief Stage 2 Size"
+   "fieldtype": "Link",
+   "label": "Main Relief Stage 2 Size",
+   "options": "Main Relief Valve Size"
   },
   {
    "fieldname": "main_relief_stage_3_size",
-   "fieldtype": "Data",
-   "label": "Main Relief Stage 3 Size"
+   "fieldtype": "Link",
+   "label": "Main Relief Stage 3 Size",
+   "options": "Main Relief Valve Size"
   },
   {
    "fieldname": "main_relief_stage_4_size",
-   "fieldtype": "Data",
-   "label": "Main Relief Stage 4 Size"
+   "fieldtype": "Link",
+   "label": "Main Relief Stage 4 Size",
+   "options": "Main Relief Valve Size"
   },
   {
    "fieldname": "impeller_size",
@@ -336,7 +350,7 @@
   {
    "default": "Rectangle",
    "fieldname": "fuel_tank_type",
-   "fieldtype": "Data",
+   "fieldtype": "Select",
    "label": "Fuel Tank Type",
    "options": "Rectangle\nRound"
   },
@@ -373,14 +387,15 @@
   },
   {
    "fieldname": "strip_heater",
-   "fieldtype": "Data",
+   "fieldtype": "Select",
    "label": "Strip Heater",
    "options": "\nPlug In\nHard Wired\nNot Fitted"
   },
   {
    "fieldname": "block_heater_type",
-   "fieldtype": "Data",
-   "label": "Block Heater Type"
+   "fieldtype": "Link",
+   "label": "Block Heater Type",
+   "options": "Block Heater Type"
   },
   {
    "fieldname": "fuel_filters_column",
@@ -389,23 +404,27 @@
   },
   {
    "fieldname": "fuel_filter_1",
-   "fieldtype": "Data",
-   "label": "Fuel Filter 1"
+   "fieldtype": "Link",
+   "label": "Fuel Filter 1",
+   "options": "Item"
   },
   {
    "fieldname": "fuel_filter_2",
-   "fieldtype": "Data",
-   "label": "Fuel Filter 2"
+   "fieldtype": "Link",
+   "label": "Fuel Filter 2",
+   "options": "Item"
   },
   {
    "fieldname": "fuel_filter_3",
-   "fieldtype": "Data",
-   "label": "Fuel Filter 3"
+   "fieldtype": "Link",
+   "label": "Fuel Filter 3",
+   "options": "Item"
   },
   {
    "fieldname": "fuel_filter_4",
-   "fieldtype": "Data",
-   "label": "Fuel Filter 4"
+   "fieldtype": "Link",
+   "label": "Fuel Filter 4",
+   "options": "Item"
   },
   {
    "fieldname": "other_filters_column",
@@ -414,39 +433,45 @@
   },
   {
    "fieldname": "oil_filter_1",
-   "fieldtype": "Data",
-   "label": "Oil Filter 1"
+   "fieldtype": "Link",
+   "label": "Oil Filter 1",
+   "options": "Item"
   },
   {
    "fieldname": "oil_filter_2",
-   "fieldtype": "Data",
-   "label": "Oil Filter 2"
+   "fieldtype": "Link",
+   "label": "Oil Filter 2",
+   "options": "Item"
   },
   {
    "fieldname": "air_filter_1",
-   "fieldtype": "Data",
-   "label": "Air Filter 1"
+   "fieldtype": "Link",
+   "label": "Air Filter 1",
+   "options": "Item"
   },
   {
    "fieldname": "air_filter_2",
-   "fieldtype": "Data",
-   "label": "Air Filter 2"
+   "fieldtype": "Link",
+   "label": "Air Filter 2",
+   "options": "Item"
   },
   {
    "fieldname": "coolant_filter",
-   "fieldtype": "Data",
-   "label": "Coolant Filter"
+   "fieldtype": "Link",
+   "label": "Coolant Filter",
+   "options": "Item"
   },
   {
    "fieldname": "cooling_system",
-   "fieldtype": "Data",
+   "fieldtype": "Select",
    "label": "Cooling System",
    "options": "\nHeat Exchanger\nRadiator\nRaw Water\nElectric\nAir Cooled"
   },
   {
    "fieldname": "pump_seal__packing",
-   "fieldtype": "Data",
-   "label": "Pump Seal / Packing"
+   "fieldtype": "Select",
+   "label": "Pump Seal / Packing",
+   "options": "\nMech Seal\nGland Packing"
   },
   {
    "fieldname": "pump_type",
@@ -458,11 +483,41 @@
    "fieldtype": "Select",
    "label": "Packing Size",
    "options": "\n7mm\n8mm\n9mm\n10mm\n12mm\n14mm"
+  },
+  {
+   "fieldname": "system_flow_requirements_tab",
+   "fieldtype": "Tab Break",
+   "label": "System Flow Requirements"
+  },
+  {
+   "fieldname": "system_requirements_section",
+   "fieldtype": "Section Break",
+   "label": "System Requirements"
+  },
+  {
+   "fieldname": "system_duties_lpm_column",
+   "fieldtype": "Column Break",
+   "label": "System Duties LPM"
+  },
+  {
+   "fieldname": "system_duty_lpm",
+   "fieldtype": "Data",
+   "label": "System Duty LPM"
+  },
+  {
+   "fieldname": "system_duties_kpa_column",
+   "fieldtype": "Column Break",
+   "label": "System Duties KPA"
+  },
+  {
+   "fieldname": "system_duty_kpa",
+   "fieldtype": "Data",
+   "label": "System Duty KPA"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-04 22:01:30.403695",
+ "modified": "2024-08-27 17:41:54.225801",
  "modified_by": "Administrator",
  "module": "Fire Pump System",
  "name": "Site Asset",

@@ -32,6 +32,9 @@ app_license = "mit"
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
+doctype_js = {
+    "Field Service Report": "public/js/field_service_report.js"
+}
 
 # Svg Icons
 # ------------------
@@ -228,4 +231,4 @@ app_license = "mit"
 # }
 
 # Path: fire_pump_system/hooks.py
-app_include_js = "/assets/fire_pump_system/js/pump_maintenance_report.js"
+#app_include_js = "/assets/fire_pump_system/js/pump_maintenance_report.js"
