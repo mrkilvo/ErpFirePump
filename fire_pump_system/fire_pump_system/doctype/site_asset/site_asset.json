@@ -80,12 +80,12 @@
   "pump",
   "panel",
   "driver",
+  "pump_room_overview",
   "system_flow_requirements_tab",
-  "system_requirements_section",
-  "system_duties_lpm_column",
-  "system_duty_lpm",
-  "system_duties_kpa_column",
-  "system_duty_kpa"
+  "table_zrja",
+  "element_size_and_type",
+  "section_break_kskl",
+  "block_plan"
  ],
  "fields": [
   {
@@ -490,34 +490,35 @@
    "label": "System Flow Requirements"
   },
   {
-   "fieldname": "system_requirements_section",
-   "fieldtype": "Section Break",
-   "label": "System Requirements"
+   "fieldname": "pump_room_overview",
+   "fieldtype": "Attach Image",
+   "label": "Pump Room Overview"
   },
   {
-   "fieldname": "system_duties_lpm_column",
-   "fieldtype": "Column Break",
-   "label": "System Duties LPM"
+   "fieldname": "table_zrja",
+   "fieldtype": "Table",
+   "label": "Flow Requirements",
+   "options": "Pump and System Duty"
   },
   {
-   "fieldname": "system_duty_lpm",
-   "fieldtype": "Data",
-   "label": "System Duty LPM"
+   "fieldname": "section_break_kskl",
+   "fieldtype": "Section Break"
   },
   {
-   "fieldname": "system_duties_kpa_column",
-   "fieldtype": "Column Break",
-   "label": "System Duties KPA"
+   "fieldname": "block_plan",
+   "fieldtype": "Attach Image",
+   "label": "Block Plan"
   },
   {
-   "fieldname": "system_duty_kpa",
-   "fieldtype": "Data",
-   "label": "System Duty KPA"
+   "fieldname": "element_size_and_type",
+   "fieldtype": "Select",
+   "label": "Element Size and Type",
+   "options": "\n2\" 20T Single\n2\" 21T Dual\n2\" 22L\n2.5\" 20T Single\n2.5\" 21T Dual\n2.5\" 22L\n3\" 20T Single\n3\" 21T Dual\n3\" 22L\n4\" 20T Single\n4\" 21T Dual\n4\" 22L\n5\" 20T Single\n5\" 21T Dual\n5\" 22L\n6\" 20T Single\n6\" 21T Dual\n6\" 22L\n8\" 20T Single\n8\" 21T Dual\n8\" 22L\n8\" 23L"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-27 17:41:54.225801",
+ "modified": "2024-08-29 20:51:05.091259",
  "modified_by": "Administrator",
  "module": "Fire Pump System",
  "name": "Site Asset",

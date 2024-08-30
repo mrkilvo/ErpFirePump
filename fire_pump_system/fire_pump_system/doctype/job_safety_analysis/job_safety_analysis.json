@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{job}-{##}",
+ "creation": "2024-08-30 14:17:15.236969",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "jsa_section",
+  "job",
+  "completed_by",
+  "status",
+  "hazards",
+  "ppe",
+  "equipment",
+  "column_break_xgtc",
+  "emergency_plan",
+  "signage",
+  "comments"
+ ],
+ "fields": [
+  {
+   "fieldname": "job",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Job",
+   "options": "Job"
+  },
+  {
+   "fieldname": "completed_by",
+   "fieldtype": "Link",
+   "label": "Completed By",
+   "options": "User"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "hazards",
+   "fieldtype": "Select",
+   "label": "Hazards",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "ppe",
+   "fieldtype": "Select",
+   "label": "PPE",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "equipment",
+   "fieldtype": "Select",
+   "label": "Equipment",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "column_break_xgtc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "emergency_plan",
+   "fieldtype": "Select",
+   "label": "Emergency Plan",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "signage",
+   "fieldtype": "Select",
+   "label": "Signage",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Small Text",
+   "label": "Comments"
+  },
+  {
+   "fieldname": "jsa_section",
+   "fieldtype": "Section Break",
+   "label": "JSA"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-30 14:42:00.118724",
+ "modified_by": "Administrator",
+ "module": "Fire Pump System",
+ "name": "Job Safety Analysis",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "completed_by",
+ "translated_doctype": 1
+}

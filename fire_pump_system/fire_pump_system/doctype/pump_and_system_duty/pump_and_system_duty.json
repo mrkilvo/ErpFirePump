@@ -1,0 +1,51 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-29 19:47:45.349335",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "duty_type",
+  "flow_rate",
+  "pressure",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "duty_type",
+   "fieldtype": "Select",
+   "label": "Duty Type",
+   "options": "\nPump Duty\nSystem Duty"
+  },
+  {
+   "description": "Flow in L/Min",
+   "fieldname": "flow_rate",
+   "fieldtype": "Float",
+   "label": "Flow Rate"
+  },
+  {
+   "description": "In KPA",
+   "fieldname": "pressure",
+   "fieldtype": "Data",
+   "label": "Pressure"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-08-29 19:49:46.065898",
+ "modified_by": "Administrator",
+ "module": "Fire Pump System",
+ "name": "Pump and System Duty",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

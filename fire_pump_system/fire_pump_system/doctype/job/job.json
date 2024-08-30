@@ -8,6 +8,11 @@
  "field_order": [
   "booked_start",
   "booked_stop",
+  "jsa_link",
+  "column_break_tdtz",
+  "latitude",
+  "longitude",
+  "location_timestamp",
   "section_break_waxq",
   "sales_order",
   "site_address",
@@ -113,6 +118,31 @@
   {
    "fieldname": "section_break_waxq",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_tdtz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Float",
+   "label": "latitude"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Float",
+   "label": "longitude"
+  },
+  {
+   "fieldname": "location_timestamp",
+   "fieldtype": "Datetime",
+   "label": "location_timestamp"
+  },
+  {
+   "fieldname": "jsa_link",
+   "fieldtype": "Link",
+   "label": "JSA Completed",
+   "options": "Job Safety Analysis"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -159,7 +189,7 @@
    "link_fieldname": "job_number"
   }
  ],
- "modified": "2024-07-17 15:45:07.482467",
+ "modified": "2024-08-30 14:23:39.743827",
  "modified_by": "Administrator",
  "module": "Fire Pump System",
  "name": "Job",
