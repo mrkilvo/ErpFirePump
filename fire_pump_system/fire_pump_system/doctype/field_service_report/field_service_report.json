@@ -8,8 +8,10 @@
  "field_order": [
   "job_number",
   "pump_name",
+  "address",
   "column_break_gorw",
   "defect_type",
+  "defect_repaired",
   "section_break_ddvn",
   "standard_defect_selection",
   "defect_description",
@@ -89,11 +91,25 @@
    "fieldtype": "Link",
    "label": "Standard Defect Selection",
    "options": "Standard Defect Description"
+  },
+  {
+   "default": "0",
+   "fieldname": "defect_repaired",
+   "fieldtype": "Check",
+   "label": "Defect Repaired"
+  },
+  {
+   "fetch_from": "job_number.site_address",
+   "fieldname": "address",
+   "fieldtype": "Link",
+   "label": "Address",
+   "options": "Address",
+   "search_index": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-27 14:50:55.504372",
+ "modified": "2024-09-03 21:08:59.947771",
  "modified_by": "Administrator",
  "module": "Fire Pump System",
  "name": "Field Service Report",

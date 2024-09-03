@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-03 17:08:48.114762",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "annual_diesel",
+  "annual_diesel_large",
+  "annual_electric",
+  "annual_electric_large",
+  "6_monthly",
+  "5_yearly"
+ ],
+ "fields": [
+  {
+   "fieldname": "annual_diesel",
+   "fieldtype": "Int",
+   "label": "Annual Diesel"
+  },
+  {
+   "fieldname": "annual_diesel_large",
+   "fieldtype": "Int",
+   "label": "Annual Diesel Large"
+  },
+  {
+   "fieldname": "annual_electric",
+   "fieldtype": "Int",
+   "label": "Annual Electric"
+  },
+  {
+   "fieldname": "annual_electric_large",
+   "fieldtype": "Int",
+   "label": "Annual Electric Large"
+  },
+  {
+   "fieldname": "6_monthly",
+   "fieldtype": "Int",
+   "label": "6 Monthly"
+  },
+  {
+   "fieldname": "5_yearly",
+   "fieldtype": "Int",
+   "label": "5 Yearly"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-09-03 17:09:46.073797",
+ "modified_by": "Administrator",
+ "module": "Fire Pump System",
+ "name": "Service Prices",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class JobTasks(Document):
+class ServicePrices(Document):
 	pass

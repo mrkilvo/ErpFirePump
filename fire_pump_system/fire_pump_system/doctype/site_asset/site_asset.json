@@ -7,6 +7,7 @@
  "engine": "InnoDB",
  "field_order": [
   "site_asset_address",
+  "is_large_motor",
   "section_break_jzar",
   "pump_details_column",
   "pump_function",
@@ -514,11 +515,17 @@
    "fieldtype": "Select",
    "label": "Element Size and Type",
    "options": "\n2\" 20T Single\n2\" 21T Dual\n2\" 22L\n2.5\" 20T Single\n2.5\" 21T Dual\n2.5\" 22L\n3\" 20T Single\n3\" 21T Dual\n3\" 22L\n4\" 20T Single\n4\" 21T Dual\n4\" 22L\n5\" 20T Single\n5\" 21T Dual\n5\" 22L\n6\" 20T Single\n6\" 21T Dual\n6\" 22L\n8\" 20T Single\n8\" 21T Dual\n8\" 22L\n8\" 23L"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_large_motor",
+   "fieldtype": "Check",
+   "label": "Over 130kw (diesel only)"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-29 20:51:05.091259",
+ "modified": "2024-08-31 10:56:27.059444",
  "modified_by": "Administrator",
  "module": "Fire Pump System",
  "name": "Site Asset",

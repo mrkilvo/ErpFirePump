@@ -7,12 +7,15 @@
  "engine": "InnoDB",
  "field_order": [
   "booked_start",
+  "job_hours",
   "booked_stop",
+  "assigned_to",
   "jsa_link",
   "column_break_tdtz",
   "latitude",
   "longitude",
   "location_timestamp",
+  "job_type",
   "section_break_waxq",
   "sales_order",
   "site_address",
@@ -108,12 +111,12 @@
   {
    "fieldname": "booked_start",
    "fieldtype": "Datetime",
-   "label": "Booked Start"
+   "label": "Job Start Time"
   },
   {
    "fieldname": "booked_stop",
    "fieldtype": "Datetime",
-   "label": "Booked Stop"
+   "label": "Job End Time"
   },
   {
    "fieldname": "section_break_waxq",
@@ -143,6 +146,23 @@
    "fieldtype": "Link",
    "label": "JSA Completed",
    "options": "Job Safety Analysis"
+  },
+  {
+   "fieldname": "job_hours",
+   "fieldtype": "Float",
+   "label": "Job Hours"
+  },
+  {
+   "fieldname": "assigned_to",
+   "fieldtype": "Link",
+   "label": "Assigned To",
+   "options": "User"
+  },
+  {
+   "fieldname": "job_type",
+   "fieldtype": "Select",
+   "label": "Job Type",
+   "options": "\nAnnual Service\nBreakdown\nRepairs"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -189,7 +209,7 @@
    "link_fieldname": "job_number"
   }
  ],
- "modified": "2024-08-30 14:23:39.743827",
+ "modified": "2024-08-30 17:47:54.173754",
  "modified_by": "Administrator",
  "module": "Fire Pump System",
  "name": "Job",

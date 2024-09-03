@@ -33,7 +33,7 @@
  "modified": "2024-08-30 14:53:28.915125",
  "modified_by": "Administrator",
  "module": "Fire Pump System",
- "name": "Job Tasks",
+ "name": "Job Task",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [

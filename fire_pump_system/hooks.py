@@ -232,3 +232,4 @@ doctype_js = {
 
 # Path: fire_pump_system/hooks.py
 #app_include_js = "/assets/fire_pump_system/js/pump_maintenance_report.js"
+app_include_css = "/assets/fire_pump_system/css/custom_theme.css"
