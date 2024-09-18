@@ -476,8 +476,9 @@
   },
   {
    "fieldname": "pump_type",
-   "fieldtype": "Data",
-   "label": "Pump Type"
+   "fieldtype": "Select",
+   "label": "Pump Type",
+   "options": "\nEnd Suction\nMulti Stage\nSplit Case\nRight Angle\nPedestal"
   },
   {
    "fieldname": "packing_size",
@@ -525,7 +526,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-31 10:56:27.059444",
+ "modified": "2024-09-05 15:51:33.916254",
  "modified_by": "Administrator",
  "module": "Fire Pump System",
  "name": "Site Asset",

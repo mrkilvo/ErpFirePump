@@ -1,0 +1,127 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-13 14:51:22.968720",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "job_number",
+  "address",
+  "pump_name",
+  "section_break_dcvc",
+  "column_break_wfds",
+  "column_break_mpkw",
+  "item_11",
+  "section_break_qopi",
+  "column_break_ljvw",
+  "column_break_yyvj",
+  "item_12",
+  "section_break_pgnb",
+  "column_break_msot",
+  "column_break_heby",
+  "item_13"
+ ],
+ "fields": [
+  {
+   "fieldname": "job_number",
+   "fieldtype": "Link",
+   "label": "Job Number",
+   "options": "Job"
+  },
+  {
+   "fetch_from": "job_number.site_address",
+   "fieldname": "address",
+   "fieldtype": "Link",
+   "label": "Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "pump_name",
+   "fieldtype": "Select",
+   "label": "Pump Name",
+   "options": "\nPump 1\nPump 2\nPump 3\nPump 4\nPump 5\nPump 6\nPump 7\nPump 8\nPump 9\nPump 10"
+  },
+  {
+   "fieldname": "section_break_dcvc",
+   "fieldtype": "Section Break",
+   "label": "Monthly"
+  },
+  {
+   "fieldname": "item_11",
+   "fieldtype": "Select",
+   "label": "Item 1.1",
+   "options": "\nPass\nFail"
+  },
+  {
+   "description": "1.1 Pump areas (a) CHECK that pump areas are unobstructed,\nnot used for storage and lighting is adequate.\n(b) Where pump pressure-relief valves are fitted,\nCHECK that discharge will not cause\nflooding or water damage.",
+   "fieldname": "column_break_wfds",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_mpkw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_qopi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "1.2 Signage and ID\nplates per\nAS 2941 (where\napplicable)\n(a) CHECK that each pumpset has a clearly\nvisible warning sign stating \u2018Danger this\nPump Starts Automatically\u2019.\n(b) CHECK that there are readily seen and\nclearly legible ID plates on each controller,\ndriver (diesel and electric), pumpset (on base\nplate) and pump (on the pump).\n(c) CHECK each pump controller is labelled\n\u2018Fire Pump Controller\u2019, has clear operating\ninstructions posted, has all operating\ncomponents clearly identified, and has all\nindicating lights clearly labelled.",
+   "fieldname": "column_break_ljvw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_yyvj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "item_12",
+   "fieldtype": "Select",
+   "label": "Item 1.2",
+   "options": "\nPass\nFail"
+  },
+  {
+   "fieldname": "section_break_pgnb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "1.3 Pump water\nsupply valves\nCHECK that all valves are in the open position or\nthe closed position, as labelled, and secured,\nwhere applicable, as indicated on the valve list.\nNOTES:\n1 Record the number of valves checked against\nthe total number of valves on the valve list.\n2 If a valve list does not exist, it may be\ndeveloped during this activity.",
+   "fieldname": "column_break_msot",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_heby",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "item_13",
+   "fieldtype": "Select",
+   "label": "Item 1.3",
+   "options": "\nPass\nFail"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-13 15:01:24.108989",
+ "modified_by": "Administrator",
+ "module": "Fire Pump System",
+ "name": "AS1851-2012-Pumps Annual",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

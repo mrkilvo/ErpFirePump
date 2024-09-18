@@ -1,0 +1,53 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:testing_standards",
+ "creation": "2024-09-05 15:37:31.315649",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "testing_standards",
+  "testing_description"
+ ],
+ "fields": [
+  {
+   "fieldname": "testing_standards",
+   "fieldtype": "Data",
+   "label": "Testing Standards",
+   "unique": 1
+  },
+  {
+   "fieldname": "testing_description",
+   "fieldtype": "Data",
+   "label": "Testing Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-05 15:45:58.143660",
+ "modified_by": "Administrator",
+ "module": "Fire Pump System",
+ "name": "Testing Standards",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "testing_standards",
+ "translated_doctype": 1
+}
