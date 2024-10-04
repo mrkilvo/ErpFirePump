@@ -1,0 +1,149 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:engine_model",
+ "creation": "2024-10-03 10:39:17.642412",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "column_break_jlto",
+  "engine_model",
+  "section_break_tpgr",
+  "starter_motor",
+  "column_break_akxa",
+  "alternator",
+  "column_break_axzz",
+  "head_gasket",
+  "head_gasket_set",
+  "section_break_rjib",
+  "water_pump",
+  "thermostat",
+  "column_break_wfiv",
+  "turbo_charger",
+  "column_break_gcaz",
+  "high_pressure_fuel_pump",
+  "lift_pump",
+  "injector"
+ ],
+ "fields": [
+  {
+   "fieldname": "engine_model",
+   "fieldtype": "Data",
+   "label": "Engine Model/Make",
+   "unique": 1
+  },
+  {
+   "fieldname": "starter_motor",
+   "fieldtype": "Link",
+   "label": "STARTER MOTOR",
+   "options": "Item"
+  },
+  {
+   "fieldname": "column_break_jlto",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "alternator",
+   "fieldtype": "Link",
+   "label": "Alternator",
+   "options": "Item"
+  },
+  {
+   "fieldname": "head_gasket",
+   "fieldtype": "Link",
+   "label": "Head Gasket",
+   "options": "Item"
+  },
+  {
+   "fieldname": "head_gasket_set",
+   "fieldtype": "Link",
+   "label": "Head Gasket set",
+   "options": "Item"
+  },
+  {
+   "fieldname": "section_break_tpgr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_akxa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_axzz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_rjib",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "water_pump",
+   "fieldtype": "Link",
+   "label": "Water Pump",
+   "options": "Item"
+  },
+  {
+   "fieldname": "thermostat",
+   "fieldtype": "Link",
+   "label": "Thermostat",
+   "options": "Item"
+  },
+  {
+   "fieldname": "column_break_wfiv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "turbo_charger",
+   "fieldtype": "Link",
+   "label": "Turbo Charger",
+   "options": "Item"
+  },
+  {
+   "fieldname": "column_break_gcaz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "high_pressure_fuel_pump",
+   "fieldtype": "Link",
+   "label": "High Pressure Fuel Pump",
+   "options": "Item"
+  },
+  {
+   "fieldname": "lift_pump",
+   "fieldtype": "Link",
+   "label": "Lift Pump",
+   "options": "Item"
+  },
+  {
+   "fieldname": "injector",
+   "fieldtype": "Link",
+   "label": "Injector",
+   "options": "Item"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-03 19:12:41.269109",
+ "modified_by": "Administrator",
+ "module": "Fire Pump System",
+ "name": "Engine Details",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

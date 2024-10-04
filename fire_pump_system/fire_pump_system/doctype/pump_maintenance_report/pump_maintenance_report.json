@@ -46,7 +46,6 @@
   "check_oil_level",
   "check_fuel_level_",
   "check_cooling_system",
-  "cooling_system_type",
   "cooling_system_drain_flush_and_refill",
   "column_break_gmdz",
   "hose_condition",
@@ -68,8 +67,6 @@
   "check_coupling_rubbers",
   "check_grease_hardy_spicer",
   "pump_section",
-  "pump_seal_type",
-  "pump_packing_size__seal_condition",
   "pump_bearings",
   "check_clean_gland_drains",
   "gauges_section",
@@ -186,8 +183,9 @@
   },
   {
    "fieldname": "driver_type",
-   "fieldtype": "Data",
-   "label": "Driver Type"
+   "fieldtype": "Select",
+   "label": "Driver Type",
+   "options": "\nDiesel\nElectric"
   },
   {
    "fieldname": "driver_make",
@@ -350,7 +348,7 @@
    "options": "\nPass\nFail"
   },
   {
-   "description": "If % is Less than 75% Then Fail",
+   "description": "If % is Less than 2/3 Then Fail",
    "fieldname": "check_fuel_level_",
    "fieldtype": "Percent",
    "label": "Check Fuel Level %",
@@ -361,12 +359,6 @@
    "fieldtype": "Select",
    "label": "Check Cooling System",
    "options": "\nPass\nFail"
-  },
-  {
-   "fieldname": "cooling_system_type",
-   "fieldtype": "Select",
-   "label": "Cooling System Type",
-   "options": "\nHeat Exchanger\nRadiator\nAir Cooled\nElectric\nN/A"
   },
   {
    "fieldname": "cooling_system_drain_flush_and_refill",
@@ -485,28 +477,16 @@
    "label": "Pump"
   },
   {
-   "fieldname": "pump_seal_type",
-   "fieldtype": "Select",
-   "label": "Pump Seal Type",
-   "options": "\nMech Seal\nGland Pack"
-  },
-  {
-   "fieldname": "pump_packing_size__seal_condition",
-   "fieldtype": "Select",
-   "label": "Pump Packing Size / Seal Condition",
-   "options": "\nMech Seal\nGland Pack"
-  },
-  {
    "fieldname": "pump_bearings",
    "fieldtype": "Select",
    "label": "Pump Bearings",
-   "options": "\nMech Seal\nGland Pack"
+   "options": "\nPass\nFail"
   },
   {
    "fieldname": "check_clean_gland_drains",
    "fieldtype": "Select",
    "label": "Check Clean Gland Drains",
-   "options": "\nMech Seal\nGland Pack"
+   "options": "\nPass\nFail"
   },
   {
    "fieldname": "gauges_section",
@@ -853,7 +833,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-18 17:41:29.073847",
+ "modified": "2024-09-20 19:08:42.023076",
  "modified_by": "Administrator",
  "module": "Fire Pump System",
  "name": "Pump Maintenance Report",

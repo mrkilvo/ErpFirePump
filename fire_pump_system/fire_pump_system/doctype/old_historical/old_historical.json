@@ -1,0 +1,74 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "autoincrement",
+ "creation": "2024-09-19 15:37:57.315672",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "address",
+  "job_type",
+  "company",
+  "job_date",
+  "job_status",
+  "technician"
+ ],
+ "fields": [
+  {
+   "fieldname": "job_type",
+   "fieldtype": "Data",
+   "label": "Job Type"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "label": "Company"
+  },
+  {
+   "fieldname": "job_date",
+   "fieldtype": "Data",
+   "label": "Job Date"
+  },
+  {
+   "fieldname": "job_status",
+   "fieldtype": "Data",
+   "label": "Job Status"
+  },
+  {
+   "fieldname": "technician",
+   "fieldtype": "Data",
+   "label": "Technician"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Link",
+   "label": "Site Address",
+   "options": "Address"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-19 15:41:35.912575",
+ "modified_by": "Administrator",
+ "module": "Fire Pump System",
+ "name": "Old Historical",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
